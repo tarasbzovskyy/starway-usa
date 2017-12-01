@@ -20,10 +20,11 @@ gulp.task('sass', function(){
 
 gulp.task('scripts', function(){
     return gulp.src([
-        'app/libs/jquery/production/jquery.min.js',
+        'app/libs/jquery/dist/jquery.min.js',
         'app/libs/animejs/anime.min.js',
         'app/libs/waypoints/lib/jquery.waypoints.min.js',
-        'app/libs/swiper/production/js/swiper.min.js'
+        'app/libs/swiper/dist/js/swiper.min.js',
+        'app/libs/bootstrap/js/bootstrap.min.js'
     ]).pipe(concat('libs.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest('app/js'));
@@ -50,18 +51,20 @@ gulp.task('css-libs', ['sass'], function(){
 });
 
 gulp.task('build', ['clean', 'img', 'css-libs','scripts'], function(){
-    var buildCss = gulp.src('app/css/**/*min.css').pipe(gulp.dest('production/css')),
+    var buildCss = gulp.src('app/css/*.min.css').pipe(gulp.dest('production/css')),
         
         buildFonts = gulp.src('app/fonts/**/*').pipe(gulp.dest('production/fonts')),
         
-        buildJs = gulp.src('app/js/**/*').pipe(gulp.dest('production/js')),
+        buildJs = gulp.src('app/js/**/*').pipe(gulp.dest('production/js'));
         
-        buildHtml = gulp.src('app/*.html').pipe(gulp.dest('production/'));
+        // buildHtml = gulp.src('app/*.html').pipe(gulp.dest('production/'));
         console.log('Build - Ready!');
 });
 
 gulp.task('clean', function(){
-    return del.sync('production/')
+    console.log('clean!!!!!');
+    return del.sync('production/');
+
 });
 
 gulp.task('clear-cache', function(){

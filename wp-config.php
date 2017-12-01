@@ -18,15 +18,65 @@
  * @package WordPress
  */
 
+// Define Environments
+$environments = array(
+    'local' => 'starway',
+    'demo' => 'starwayusa',
+);
+// Get Server name
+$server_name = $_SERVER['SERVER_NAME'];
+global $server_name;
+
+foreach($environments AS $key => $env){
+    if(strstr($server_name, $env)){
+        define('ENVIRONMENT', $key);
+        break;
+    }
+}
+// If no environment is set default to production
+switch(ENVIRONMENT){
+    case 'local':
+        define('DB_NAME', 'sw_usa');
+        define('DB_USER', 'root');
+        define('DB_PASSWORD', '');
+        define('WP_DEBUG', true);
+        define('FORCE_SSL_ADMIN', false);
+        break;
+
+//    case 'demo':
+//        define('DB_USER', 'root');
+//        define('DB_NAME', '');
+//        define('DB_PASSWORD', '');
+//        define('WP_DEBUG', true);
+//        break;
+
+    default:
+        define('DB_USER', 'root');
+        define('DB_NAME', '');
+        define('DB_PASSWORD', '');
+        define('FORCE_SSL_ADMIN', true);
+        define('WP_DEBUG', false);
+}
+
+if(!defined('ENVIRONMENT')) {
+    define('DB_USER', 'root');
+    define('DB_NAME', 'live_forte');
+    define('DB_PASSWORD', 'muH6l30YuQ');
+    define( 'WPCACHEHOME', 'C:\xampp\htdocs\dev.forte\wp-content\plugins\wp-super-cache/' ); //Added by WP-Cache Manager
+//define('WP_CACHE', true); //Added by WP-Cache Manager
+    define('FORCE_SSL_ADMIN', true);
+    define('WP_DEBUG', false);
+}
+
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'sw_usa');
+//define('DB_NAME', 'sw_usa');
 
 /** MySQL database username */
-define('DB_USER', 'root');
+//define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', '');
+//define('DB_PASSWORD', '');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
@@ -77,7 +127,7 @@ $table_prefix  = 'wp_';
  *
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
-define('WP_DEBUG', false);
+//define('WP_DEBUG', false);
 
 /* That's all, stop editing! Happy blogging. */
 

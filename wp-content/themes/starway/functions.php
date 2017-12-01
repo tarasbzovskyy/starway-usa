@@ -119,15 +119,22 @@ add_action( 'widgets_init', 'starway_widgets_init' );
  */
 
 
+
 function starway_scripts() {
+
+    $assets_folder = 'production';
+
+    if ($server_name = 'starway') {
+        $assets_folder = 'app';
+    }
 
     wp_enqueue_style( 'starway-style', get_stylesheet_uri() ); //default styles
 
-    wp_enqueue_style('main_css', get_template_directory_uri(). '/assets/production/css/' . 'main.min.css',array(), '1.0.0');
+    wp_enqueue_style('main_css', get_template_directory_uri(). '/assets/'. $assets_folder .'/css/' . 'main.min.css',array(), '1.0.0');
 
-    wp_enqueue_style('libs_css', get_template_directory_uri(). '/assets/production/css/' . 'libs.min.css',array(), '1.0.0');
+    wp_enqueue_style('libs_css', get_template_directory_uri(). '/assets/'. $assets_folder .'/css/' . 'libs.min.css',array(), '1.0.0');
 
-    wp_enqueue_script('libs_js',get_template_directory_uri() .'/assets/production/js/' . 'libs.min.js',array(), '1.0.0');
+    wp_enqueue_script('libs_js',get_template_directory_uri() .'/assets/'. $assets_folder .'/js/' . 'libs.min.js',array(), '1.0.0');
 
     wp_enqueue_script( 'starway-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
@@ -137,6 +144,7 @@ function starway_scripts() {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
+
 add_action( 'wp_enqueue_scripts', 'starway_scripts' );
 
 /**
