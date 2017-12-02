@@ -43,14 +43,25 @@ gulp.task('watch', function(){
     gulp.watch('app/sass/**/*.sass', ['sass']);
 });
 
-gulp.task('css-libs', ['sass'], function(){
-    return gulp.src('app/css/**/*.css')
+gulp.task('css-libs', function(){
+    return gulp.src([
+        'app/libs/bootstrap/css/bootstrap.min.css',
+        'app/libs/swiper/dist/css/swiper.min.css'
+    ])
+        .pipe(concat('libs.min.css'))
+        .pipe(cssnano())
+        .pipe(gulp.dest('app/css'));
+});
+gulp.task('styles-css',['clean-app-css', 'sass', 'css-libs'], function(){
+    return gulp.src([
+        'app/css/main.css'
+    ])
         .pipe(cssnano())
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('app/css'));
-});
 
-gulp.task('build', ['clean', 'img', 'css-libs','scripts'], function(){
+});
+gulp.task('build', ['clean', 'img', 'styles-css','scripts'], function(){
     var buildCss = gulp.src('app/css/*.min.css').pipe(gulp.dest('production/css')),
         
         buildFonts = gulp.src('app/fonts/**/*').pipe(gulp.dest('production/fonts')),
@@ -64,6 +75,11 @@ gulp.task('build', ['clean', 'img', 'css-libs','scripts'], function(){
 gulp.task('clean', function(){
     console.log('clean!!!!!');
     return del.sync('production/');
+
+});
+
+gulp.task('clean-app-css', function(){
+    return del.sync('app/css/*.min.css');
 
 });
 
