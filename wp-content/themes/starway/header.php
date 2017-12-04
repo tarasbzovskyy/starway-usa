@@ -25,19 +25,18 @@
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'starway' ); ?></a>
 
 	<header id="masthead" class="site-header">
-
 		<nav class="container navbar">
-			<div class="navbar-header">
+			<div class="navbar-header pull-left">
 				<a href="/">
 					<img class="logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/starway-logo.svg">
 				</a>
 			</div>
-			<div class="nav menu-button navbar-nav navbar-right">
+			<div class="nav menu-button navbar-nav pull-right">
 				<div class="stripe-block">
 					<div class="menu-stripe stripe1"></div>
-					<div class="menu-stripe stripe1"></div>
-					<div class="menu-stripe stripe1"></div>
-					<div class="menu-stripe stripe1"></div>
+					<div class="menu-stripe stripe2"></div>
+					<div class="menu-stripe stripe3"></div>
+					<div class="menu-stripe stripe4"></div>
 				</div>
 			</div>
 		</nav>

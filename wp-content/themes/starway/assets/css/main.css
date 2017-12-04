@@ -51,38 +51,60 @@ header {
   background: linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(231,56,39,0) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#e73827', GradientType=0 );
 }
-.center-block {
-  display:table;
-  margin: 0 auto;
-}
 
 .menu-button {
-  width:50px;
-  height:50px;
+  width:40px;
+  height:25px;
   overflow:hidden;
 
 }
 .stripe-block {
-  width:100%;
-  height:100%;
-  transform:  rotate(-30deg);
-  -webkit-transform:  rotate(-30deg);
-  -moz-transform: rotate(-30deg);
-  -o-transform:  rotate(-30deg);
-  -ms-transform:  rotate(-30deg);
+  margin-left:9px;
 }
 .menu-button .menu-stripe {
-  width:100%;
-  height:2px;
+  width:2px;
+  height:25px;
   background-color:#fff;
-  margin-top:3px;
-  transform:  skew(-30deg, 0deg);
-  -webkit-transform:  skew(-30deg, 0deg);
-  -moz-transform: skew(-30deg, 0deg);
-  -o-transform:  skew(-30deg, 0deg);
-  -ms-transform:  skew(-30deg, 0deg);
+  margin-left:1px;
+  display:inline-block;
+  -ms-transform: rotate(30deg)  skewY(-30deg); /* IE 9 */
+  -webkit-transform: rotate(30deg)  skewY(-30deg); /* Safari */
+  transform:rotate(30deg)  skewY(-30deg);
+
 }
 .menu-button .menu-stripe:first-child {
-  margin-top:0;
+  margin-left:0;
+}
 
+.center-block {
+  display:table;
+  margin: 0 auto;
+}
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+.float-none {
+  float:none;
+}
+
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
+
+/*Header*/
+
+.site-header {
+  padding:20px 0 10px;
 }
