@@ -120,25 +120,28 @@ add_action( 'widgets_init', 'starway_widgets_init' );
 
 
 
+
 function starway_scripts() {
 
-    $assets_folder = 'production';
+	$CSS_folder = get_template_directory_uri() . '/assets/css/';
+	$JS_folder = get_template_directory_uri() . '/assets/js/';
 
-    if ($server_name = 'starway') {
-        $assets_folder = 'app';
-    }
-
+	// CONNECT CSS
     wp_enqueue_style( 'starway-style', get_stylesheet_uri() ); //default styles
+	wp_enqueue_style('bootstrap_css', $CSS_folder . 'bootstrap.min.css',array(), '1.0.0');
+	wp_enqueue_style('swiper_css', $CSS_folder . 'swiper.min.css',array(), '1.0.0');
+	wp_enqueue_style('main_css', $CSS_folder . 'main.css',array(), '1.0.0');
 
-    wp_enqueue_style('main_css', get_template_directory_uri(). '/assets/'. $assets_folder .'/css/' . 'main.min.css',array(), '1.0.0');
+	// CONNECT JS
+	wp_enqueue_script('jquery', $JS_folder . 'jquery.min.js',array(), '1.0.0');
+	wp_enqueue_script('bootstrap_js', $JS_folder . 'bootstrap.min.js',array(), '1.0.0');
+	wp_enqueue_script('anime_js', $JS_folder . 'anime.min.js',array(), '1.0.0');
+	wp_enqueue_script('waypoints_js', $JS_folder . 'jquery.waypoints.min.js',array(), '1.0.0');
+	wp_enqueue_script('swiper_js', $JS_folder . 'swiper.min.js',array(), '1.0.0');
+	wp_enqueue_script('scripts_js', $JS_folder . 'scripts.js',array(), '1.0.0');
 
-    wp_enqueue_style('libs_css', get_template_directory_uri(). '/assets/'. $assets_folder .'/css/' . 'libs.min.css',array(), '1.0.0');
 
-    wp_enqueue_script('libs_js',get_template_directory_uri() .'/assets/'. $assets_folder .'/js/' . 'libs.min.js',array(), '1.0.0');
-
-    wp_enqueue_script('scripts_js',get_template_directory_uri() .'/assets/'. $assets_folder .'/js/' . 'scripts.js',array(), '1.0.0');
-
-    wp_enqueue_script( 'starway-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
+	wp_enqueue_script( 'starway-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'starway-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 

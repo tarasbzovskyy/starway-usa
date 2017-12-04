@@ -60,10 +60,9 @@ switch(ENVIRONMENT){
 
 if(!defined('ENVIRONMENT')) {
     define('DB_USER', 'root');
-    define('DB_NAME', 'live_forte');
-    define('DB_PASSWORD', 'muH6l30YuQ');
-    define( 'WPCACHEHOME', 'C:\xampp\htdocs\dev.forte\wp-content\plugins\wp-super-cache/' ); //Added by WP-Cache Manager
-//define('WP_CACHE', true); //Added by WP-Cache Manager
+    define('DB_NAME', '');
+    define('DB_PASSWORD', '');
+
     define('FORCE_SSL_ADMIN', true);
     define('WP_DEBUG', false);
 }
