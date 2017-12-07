@@ -164,19 +164,57 @@ function menuButton(){
 })(Stars || (Stars = {}));
 
 
+function fullHeight(target) {
 
+    var getSizes = getWindowSizes(),
+        height = getSizes.split('#')[1],
+        width = getSizes.split('#')[0],
+        navBarHeight = document.getElementById('masthead').clientHeight;
+
+        $(target).css({
+            height: (height - navBarHeight) + 'px'
+        });
+    }
+
+function getWindowSizes() {
+    var myWidth = 0, myHeight = 0;
+    if( typeof( window.innerWidth ) == 'number' ) {
+        //Non-IE
+        myWidth = window.innerWidth;
+        myHeight = window.innerHeight;
+    } else if( document.documentElement && ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) {
+        //IE 6+ in 'standards compliant mode'
+        myWidth = document.documentElement.clientWidth;
+        myHeight = document.documentElement.clientHeight;
+    } else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
+        //IE 4 compatible
+        myWidth = document.body.clientWidth;
+        myHeight = document.body.clientHeight;
+    }
+    return myWidth + '#' + myHeight
+}
+
+
+//functions init
 $(document).ready(function () {
     menuButton();
-    $('<canvas/> ', {
-        id:'space'
-    }).prependTo('body');
-    var stars = new Stars.Canvas(document.getElementById('space'));
+    if ($('body').find('.main-header')) {
+        var headerCanv = $('<canvas/> ', {
+            id:'space'
+        }).prependTo('body');
+        var stars = new Stars.Canvas(document.getElementById('space'));
+    }
+
 });
 
 $(window).on("load", function () {
-
+    if ($('#masthead').length) {
+        fullHeight('.full-height')
+    }
 });
 
 window.onresize = function (e) {
-
+    if ($('#masthead').length) {
+        fullHeight('.full-height')
+    }
 };
