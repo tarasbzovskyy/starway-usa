@@ -183,7 +183,7 @@ header {
 
 /*Header*/
 .site-header {
-  padding:20px 0 10px;
+  padding:50px 0 10px;
 }
 .main-menu {
   display:none;
@@ -208,10 +208,7 @@ header {
   z-index: 0;
 }
 .main-header {
-  /*position:absolute;*/
-  /*z-index:1;*/
-  /*top:0;*/
-
+  overflow:hidden;
 }
 .main-header .container {
   z-index:1;
@@ -284,7 +281,26 @@ svg {width:100%;}
   top: 10%;
   left: 0;
 }
-.group{
+.group {
   position:relative;
   z-index:1
+}
+.main-header svg#parallels-right,
+.main-header svg#parallels-left {
+  position:absolute;
+  width: 50%;
+  opacity: .1;
+}
+.main-header svg#parallels-right {
+  right: -32%;
+  top: -40%;
+}
+.main-header  svg#parallels-left {
+  left: -10px;
+  width: 56%;
+  top: 20%;
+}
+
+body{
+  height:2000px;
 }

@@ -8,7 +8,6 @@
  *
  * @package starway
  */
-
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -38,8 +37,8 @@
 				</div>
 			</div>
 		</nav>
-
 	</header><!-- #masthead -->
+
     <div class="main-menu">
         <nav id="site-navigation" class="main-navigation">
 

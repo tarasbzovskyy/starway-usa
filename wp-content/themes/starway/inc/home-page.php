@@ -2,10 +2,18 @@
 /*
 Template Name: Home Page
 */
+
+$arrContextOptions=array(
+    "ssl"=>array(
+        "verify_peer"=>false,
+        "verify_peer_name"=>false,
+    ),
+);
+
 ?>
 <?php get_header(); ?>
 
-<section class="main-header">
+<section class="main-header group">
     <div class="container ">
         <div class="flexbox-container full-height">
             <div class="header-content col-md-8 vertical-center">
@@ -22,9 +30,16 @@ Template Name: Home Page
                 </div>
             </div>
         </div>
-    </div>
-</section>
-<section>
 
+    </div>
+    <?php
+        echo file_get_contents(get_template_directory_uri()."/assets/img/parallels-left.svg", false, stream_context_create($arrContextOptions));
+        echo file_get_contents(get_template_directory_uri()."/assets/img/parallels-right.svg", false, stream_context_create($arrContextOptions));
+    ?>
+</section>
+<section class="group">
+    <?php
+        echo file_get_contents(get_template_directory_uri()."/assets/img/services.svg", false, stream_context_create($arrContextOptions));
+    ?>
 </section>
 <?php get_footer(); ?>
