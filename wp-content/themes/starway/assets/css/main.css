@@ -304,3 +304,113 @@ svg {width:100%;}
 body{
   height:2000px;
 }
+
+#portfolio > svg {
+  position:absolute;
+  top:0;
+
+}
+
+.container-skew {
+  width:80%;
+  display:table;
+  margin:1% auto 0;
+  position:relative;
+
+}
+.block-skew {
+  vertical-align:top;
+  background-color: #fff;
+  display:inline-block;
+  position:relative;
+  margin-left: 1%;
+  width:21%;
+}
+#portfolio .block-skew {
+  height:156px;
+}
+#portfolio .block-skew.skew-space {
+  height: 0;
+}
+.block-skew > *, .unskew-child {
+  display:block;
+  transform:  skew(30deg, 0deg);
+  -moz-transform: skew(30deg, 0deg);
+  -webkit-transform:  skew(30deg, 0deg);
+  -o-transform:  skew(30deg, 0deg);
+  -ms-transform:  skew(30deg, 0deg);
+}
+
+.block-skew > span {
+  position:absolute;
+  transform:  skew(30deg, 0deg) translateY(-50%);
+  -moz-transform: skew(30deg, 0deg) translateY(-50%);
+  -webkit-transform:  skew(30deg, 0deg) translateY(-50%);
+  -o-transform:  skew(30deg, 0deg) translateY(-50%);
+  -ms-transform:  skew(30deg, 0deg) translateY(-50%);
+  top: 50%;
+  left: -50%;
+  right: -85%;
+  margin: 0 auto;
+  width: 65%;
+}
+.block-skew.skew-space {
+  border:none;
+  padding:0;
+}
+
+.skew-plus-9 {
+  left:20%;
+}
+.skew-plus-45 {
+  left:10%;
+}
+.skew-minus-45 {
+  left:-10%;
+}
+.skew-more {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size:14pt;
+  text-align:center;
+  color:#241a60;
+  font-family: "AG_Futura", sans-serif;
+  position:absolute;
+  transform:  skew(0deg, 0deg) translate(-50%,-50%);
+  -moz-transform: skew(0deg, 0deg) translate(-50%,-50%);
+  -webkit-transform:  skew(0deg, 0deg) translate(-50%,-50%);
+  -o-transform:  skew(0deg, 0deg) translate(-50%,-50%);
+  -ms-transform:  skew(0deg, 0deg) translate(-50%,-50%);
+  top:50%;
+  left:50%;
+}
+
+.absolute-center {
+  position:absolute;
+  transform:  translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  top:50%;
+  left:50%;
+}
+
+.show-more:before {
+  content:'';
+  position:absolute;
+  border: 6px solid transparent;
+  left:20px;
+  top:20px;
+  right: 20px;
+  bottom:20px;
+  -moz-border-image: -moz-linear-gradient(top right, rgba(29,4,42,0.7) 0%, #fff 100%);
+  -webkit-border-image: -webkit-linear-gradient(top right, rgba(29,4,42,0.7) 0%, #fff 100%);
+  border-image: linear-gradient(to bottom left, rgba(29,4,42,0.7) 0%, #fff 100%);
+  border-image-slice: 1;
+  transform:  skew(0deg, 0deg);
+  -moz-transform: skew(0deg, 0deg);
+  -webkit-transform:  skew(0deg, 0deg);
+  -o-transform:  skew(0deg, 0deg);
+  -ms-transform:  skew(0deg, 0deg);
+}

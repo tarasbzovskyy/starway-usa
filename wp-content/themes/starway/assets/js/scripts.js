@@ -209,6 +209,37 @@ function parallaxEffect() {
 }
 
 
+function frt_allHeightAsOne(selector, midWay) {
+    var heightArr = new Array();
+
+    if (midWay == null || midWay == 'undefined'){
+        midWay = '.wpb_wrapper > div';
+    }
+
+    selector.each(function(i,a){
+        var elemHeight = parseInt($(this).css('height'));
+        heightArr.push(elemHeight);
+    });
+
+    maxHeight = Math.max.apply(null, heightArr);
+    selector.css('height',maxHeight+'px');
+
+    if (selector.hasClass('skew-space')){
+        selector.parent().find('.skew-space').css('height',0);
+    }
+    //$('.services-block .sc-info-box').css('height',maxHeight+'px');
+
+}
+function frt_noWords(e) {
+    if ((e.charCode >= 48 && e.charCode <= 57) || (e.keyCode>=37 && e.keyCode<=46) || e.keyCode==8) {
+        return true;
+    } else if (e.keyCode == 13) {
+        e.preventDefault();
+    } else {
+        e.preventDefault();
+    }
+};
+
 //functions init
 $(document).ready(function () {
     menuButton();
