@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" class="additional-elements para-block" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 575.1 339.1" style="enable-background:new 0 0 575.1 339.1;" xml:space="preserve">
+<style type="text/css">
+	.para0{opacity:0.61;}
+	.para1{fill-rule:evenodd;clip-rule:evenodd;fill:url(#para);}
+	.para2{opacity:0.21;}
+	.para3{fill-rule:evenodd;clip-rule:evenodd;fill:url(#para_2_);}
+	.para4{fill-rule:evenodd;clip-rule:evenodd;fill:url(#para_3_);}
+</style>
+<g class="para0">
+	<linearGradient id="para" gradientUnits="userSpaceOnUse" x1="292.4654" y1="339.5145" x2="29.871" y2="76.9201">
+		<stop  offset="0" style="stop-color:#14042B"/>
+		<stop  offset="0.5753" style="stop-color:#BEBACB;stop-opacity:0.2742"/>
+		<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0.1"/>
+	</linearGradient>
+	<polygon class="para1" points="196.8,101.5 5.6,101.2 127.6,317 315.2,316.8 	"/>
+</g>
+<g class="para2">
+	<linearGradient id="para_2_" gradientUnits="userSpaceOnUse" x1="539.7067" y1="302.7637" x2="208.1483" y2="-28.7946">
+		<stop  offset="0" style="stop-color:#14042B"/>
+		<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0.1"/>
+	</linearGradient>
+	<polygon class="para3" points="418.9,2.3 177.5,1.9 331.6,274.3 568.4,274.1 	"/>
+</g>
+<g class="para2">
+	<linearGradient id="para_3_" gradientUnits="userSpaceOnUse" x1="396.332" y1="349.1389" x2="245.6139" y2="198.4208">
+		<stop  offset="0" style="stop-color:#14042B"/>
+		<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0.1"/>
+	</linearGradient>
+	<polygon class="para4" points="341.4,212.5 231.7,212.4 301.7,336.2 409.4,336.1 	"/>
+</g>
+</svg>

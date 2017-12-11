@@ -38,6 +38,11 @@ $arrContextOptions=array(
     ?>
 </section>
 <section class="group">
+    <?php
+    echo file_get_contents(get_template_directory_uri()."/assets/img/triangles.svg", false, stream_context_create($arrContextOptions));
+    echo file_get_contents(get_template_directory_uri()."/assets/img/para.svg", false, stream_context_create($arrContextOptions));
+    echo file_get_contents(get_template_directory_uri()."/assets/img/triangle-reverse.svg", false, stream_context_create($arrContextOptions));
+    ?>
     <div id="portfolio" class="group">
         <div class="container">
             <div class="fade-block"></div>
@@ -139,8 +144,5 @@ $arrContextOptions=array(
             echo file_get_contents(get_template_directory_uri()."/assets/img/services-foot.svg", false, stream_context_create($arrContextOptions));
         ?>
     </div>
-    <?php
-        echo file_get_contents(get_template_directory_uri()."/assets/img/triangles.svg", false, stream_context_create($arrContextOptions));
-    ?>
 </section>
 <?php get_footer(); ?>

@@ -424,6 +424,7 @@ body{
   color: #241a60;
   font-weight: 800;
   top: 150px;
+  z-index:2;
 }
 .section-title:before {
   content: attr(title);
@@ -446,15 +447,25 @@ body{
 .accent-red {
   border-color: #bf0a20;
 }
-
-.triangle-pair {
+.additional-elements {
   position: absolute;
+  z-index: 2;
+  width: auto;
+}
+.additional-elements.triangle-pair {
   bottom: 12%;
   right: 5%;
-  width: auto;
-  z-index: 2;
 }
+.additional-elements.para-block {
+  bottom: 12%;
+  left: 5%;
+  width:30%
 
+}.additional-elements.triangle-reverse {
+  top: 10%;
+  left: 5%;
+  width:30%
+}
 .fade-block {
   position:absolute;
   bottom:0;
