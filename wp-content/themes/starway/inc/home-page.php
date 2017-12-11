@@ -39,11 +39,11 @@ $arrContextOptions=array(
 </section>
 <section class="group">
     <?php
-    echo file_get_contents(get_template_directory_uri()."/assets/img/triangles.svg", false, stream_context_create($arrContextOptions));
-    echo file_get_contents(get_template_directory_uri()."/assets/img/para.svg", false, stream_context_create($arrContextOptions));
-    echo file_get_contents(get_template_directory_uri()."/assets/img/triangle-reverse.svg", false, stream_context_create($arrContextOptions));
+        echo file_get_contents(get_template_directory_uri()."/assets/img/triangles.svg", false, stream_context_create($arrContextOptions));
+        echo file_get_contents(get_template_directory_uri()."/assets/img/para.svg", false, stream_context_create($arrContextOptions));
     ?>
     <div id="portfolio" class="group">
+    <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/triangle-reverse.svg", false, stream_context_create($arrContextOptions)); ?>
         <div class="container">
             <div class="fade-block"></div>
             <div class="row space-top-x2">
@@ -143,6 +143,97 @@ $arrContextOptions=array(
         <?php
             echo file_get_contents(get_template_directory_uri()."/assets/img/services-foot.svg", false, stream_context_create($arrContextOptions));
         ?>
+    </div>
+</section>
+<section class="group">
+    <div id="services" class="group">
+        <div class="container">
+            <div class="row space-top-x2">
+                <div class="section-title group" title="Our Services">
+                    Our Services
+                </div>
+            </div>
+            <div class="group">
+                <div class="skew-left accent-block accent-black"></div>
+                <div class="row">
+                    <div class="container-skew">
+                        <div class="skew-center">
+                            <div class="block-skew skew-left block-item skew-plus-9">
+                                <span>
+                                    <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/services/graphic-design.svg", false, stream_context_create($arrContextOptions)); ?>
+                                   <span>Graphic Design</span>
+                                </span>
+                            </div>
+                            <div class="block-skew skew-left block-item skew-plus-9">
+                               <span>
+                                    <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/services/logo-design.svg", false, stream_context_create($arrContextOptions)); ?>
+                                   <span>Logo Design</span>
+                                </span>
+                            </div>
+                            <div class="block-skew skew-left block-item skew-space">
+                            </div>
+                            <div class="block-skew skew-left block-item skew-space">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="container-skew">
+                        <div class="skew-center">
+                            <div class="block-skew skew-left block-item skew-plus-45">
+                              <span>
+                                 <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/services/ui-ux.svg", false, stream_context_create($arrContextOptions)); ?>
+                                 <span>UI/UX Design</span>
+                              </span>
+                            </div>
+                            <div class="block-skew skew-left block-item skew-plus-45">
+                                <span>
+                                    <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/services/web-design.svg", false, stream_context_create($arrContextOptions)); ?>
+                                    <span>Web Design</span>
+                                </span>
+                            </div>
+                            <div class="block-skew skew-left block-item skew-plus-45">
+                                 <span>
+                                     <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/services/app-dev.svg", false, stream_context_create($arrContextOptions)); ?>
+                                     <span>App Development</span>
+                                </span>
+                            </div>
+                            <div class="block-skew skew-left block-item skew-space">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="container-skew">
+                        <div class="skew-center">
+                            <div class="block-skew skew-left block-item">
+                                <span>
+                                     <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/services/seo.svg", false, stream_context_create($arrContextOptions)); ?>
+                                    <span>SEO Promotion</span>
+                                </span>
+                            </div>
+                            <div class="block-skew skew-left block-item">
+                                <span>
+                                     <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/services/qa.svg", false, stream_context_create($arrContextOptions)); ?>
+                                    <span>Quality Assurance</span>
+                                </span>
+                            </div>
+                            <div class="block-skew skew-left block-item">
+                                <span>
+                                     <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/services/security.svg", false, stream_context_create($arrContextOptions)); ?>
+                                    <span>Network Security</span>
+                                </span>
+                            </div>
+                            <div class="block-skew skew-left show-more block-item">
+                                <a href="#" class="skew-more">
+                                    <span class="unskew-child">More</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 <?php get_footer(); ?>

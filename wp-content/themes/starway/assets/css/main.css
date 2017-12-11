@@ -303,6 +303,9 @@ svg {width:100%;}
 body{
   height:2000px;
 }
+#portfolio .space-top-x2{
+  margin-top:12%;
+}
 #portfolio {
   background: url(../img/city-starway1.jpg) no-repeat center bottom;
   background-size: cover;
@@ -310,8 +313,8 @@ body{
 }
 #portfolio > svg {
   position:absolute;
-  top:0;
-  z-index:-1;
+  top:15%;
+  z-index:0;
 
 }
 
@@ -330,11 +333,17 @@ body{
   margin-left: 1%;
   width:21%;
 }
-#portfolio .block-skew {
+#portfolio .block-skew,
+#services .block-skew {
   height:156px;
 }
+#services .block-skew.skew-space,
 #portfolio .block-skew.skew-space {
   height: 0;
+}
+
+#services .block-skew {
+  box-shadow: 1px 7px 10px rgba(0, 0, 0, 0.26);
 }
 .block-skew > *, .unskew-child {
   display:block;
@@ -357,6 +366,28 @@ body{
   right: -85%;
   margin: 0 auto;
   width: 65%;
+}
+#services .container-skew {
+  width:90%;
+}
+#services .block-skew > span svg {
+  width:65%;
+}
+#services .block-skew > span > span  {
+  position:absolute;
+  bottom:0;
+  right: 16px;
+  width: 100%;
+}
+#services .block-skew > span{
+  text-transform: uppercase;
+  color:#bf0a20;
+  font-size:13pt;
+  font-weight:800;
+  text-align:center;
+  line-height: 15px;
+  width:100%;
+  right: -75%;
 }
 .block-skew.skew-space {
   border:none;
@@ -423,7 +454,7 @@ body{
   font-size: 50pt;
   color: #241a60;
   font-weight: 800;
-  top: 150px;
+  top: 110px;
   z-index:2;
 }
 .section-title:before {
@@ -434,18 +465,29 @@ body{
   top: -129%;
   left: -35%;
 }
-
+#services .section-title {
+  top:0;
+  margin:12% 0;
+}
 .accent-block {
   position: absolute;
   top: -5%;
   bottom: -10%;
   right: 5%;
-  width: 50%;
+  width: 55%;
   border:7px solid #fff;
 }
-
+#services .accent-block {
+  top: -10%;
+  bottom: 10%;
+  right: 30%;
+  width: 65%;
+}
 .accent-red {
   border-color: #bf0a20;
+}
+.accent-black{
+  border-color: #000;
 }
 .additional-elements {
   position: absolute;
