@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" class="triangle-pair" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" xml:space="preserve">
+<style type="text/css">
+	.triangle{opacity:0.61;fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_1_);}
+	.triangle1{opacity:0.61;fill-rule:evenodd;clip-rule:evenodd;fill:url(#SVGID_2_);}
+</style>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="528.322" y1="5704.4766" x2="777.4884" y2="5704.4766" gradientTransform="matrix(-1 6.400000e-03 -6.400000e-03 -1 852.1402 5808.2061)">
+	<stop  offset="0" style="stop-color:#080912"/>
+	<stop  offset="1" style="stop-color:#14042B"/>
+</linearGradient>
+<polygon class="triangle" points="288,215 162.1,0 38.8,214.8 "/>
+<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="-1591.3042" y1="1638.7689" x2="-1441.5575" y2="1638.7689" gradientTransform="matrix(0.4996 0.8663 -0.8663 0.4996 2247.4038 659.7401)">
+	<stop  offset="0" style="stop-color:#080912"/>
+	<stop  offset="1" style="stop-color:#14042B"/>
+</linearGradient>
+<polygon class="triangle1" points="88.9,67.5 13.9,197 163.5,197.4 "/>
+</svg>
