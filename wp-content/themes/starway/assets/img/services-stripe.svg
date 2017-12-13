@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="stripes" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1091.6 1334" style="enable-background:new 0 0 1091.6 1334;" xml:space="preserve">
+<style type="text/css">
+	.services-stripe-4{fill:url(#services-stripe-4_1_);}
+	.services-stripe-3{fill:url(#services-stripe-3_1_);}
+	.services-stripe-2{fill:url(#services-stripe-2_1_);}
+	.services-stripe-1{fill:url(#services-stripe-1_1_);}
+</style>
+<g>
+	<linearGradient id="services-stripe-4_1_" gradientUnits="userSpaceOnUse" x1="468.8658" y1="523.1658" x2="-184.115" y2="523.1658" gradientTransform="matrix(1 0 0 1 483.7433 0)">
+		<stop  offset="0" style="stop-color:#14042B;stop-opacity:0.7"/>
+		<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0.1"/>
+	</linearGradient>
+	<polygon id="services-stripe-4" class="services-stripe-4" points="952.6,1 380.7,1044.6 299.6,1045.3 872.6,1 	"/>
+		<linearGradient id="services-stripe-3_1_" gradientUnits="userSpaceOnUse" x1="606.8658" y1="429.8528" x2="71.1787" y2="429.8528" gradientTransform="matrix(1 0 0 1 483.7433 0)">
+		<stop  offset="0" style="stop-color:#14042B;stop-opacity:0.7"/>
+		<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0.1"/>
+	</linearGradient>
+	<polygon id="services-stripe-3" class="services-stripe-3" points="1090.6,1 635.3,858.7 554.9,858.7 1009.6,1 	"/>
+		<linearGradient id="services-stripe-2_1_" gradientUnits="userSpaceOnUse" x1="323.4253" y1="611.9867" x2="-432.2028" y2="611.9867" gradientTransform="matrix(1 0 0 1 483.7433 0)">
+		<stop  offset="0" style="stop-color:#14042B;stop-opacity:0.7"/>
+		<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0.1"/>
+	</linearGradient>
+	<polygon id="services-stripe-2" class="services-stripe-2" points="807.2,1 131.9,1223 51.5,1223 726.8,1 	"/>
+		<linearGradient id="services-stripe-1_1_" gradientUnits="userSpaceOnUse" x1="172.8658" y1="490.6628" x2="-465.4076" y2="490.6628" gradientTransform="matrix(1 0 0 1 483.7433 0)">
+		<stop  offset="0" style="stop-color:#14042B;stop-opacity:0.7"/>
+		<stop  offset="1" style="stop-color:#FFFFFF;stop-opacity:0.1"/>
+	</linearGradient>
+	<polygon id="services-stripe-1" class="services-stripe-1" points="656.6,1 98.7,980.3 18.3,980.3 575.6,1 	"/>
+</g>
+</svg>

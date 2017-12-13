@@ -140,6 +140,7 @@ function starway_scripts() {
 	wp_enqueue_script('swiper_js', $JS_folder . 'swiper.min.js',array(), '1.0.0');
 	wp_enqueue_script('tweenmax_js', $JS_folder . 'TweenMax.min.js',array(), '1.0.0');
 	wp_enqueue_script('smoothscroll_js', $JS_folder . 'jquery.smoothscroll.js',array(), '1.0.0');
+	wp_enqueue_script('particles_js', $JS_folder . 'particles.min.js',array(), '1.0.0');
 	wp_enqueue_script('scripts_js', $JS_folder . 'scripts.js',array(), '1.0.0');
 
 

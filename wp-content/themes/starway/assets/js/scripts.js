@@ -258,6 +258,15 @@ $(window).on("load", function () {
         fullHeight('.full-height')
         fullHeight('.main-header')
     }
+    if ($('.particles-js').length) {
+        $('.particles-js').each(function(num, index){
+            var elem = $('<div/>', {
+                id: 'particles-js'+'-'+ num
+            }).prependTo(this);
+            particlesJS.load('particles-js'+'-'+ num, '/wp-content/themes/starway/assets/js/particlesjs-config.json');
+        })
+
+    }
 });
 
 window.onresize = function (e) {

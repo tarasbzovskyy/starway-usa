@@ -155,6 +155,9 @@ $arrContextOptions=array(
             </div>
             <div class="group">
                 <div class="skew-left accent-block accent-black"></div>
+                <div class="services-stripe-block">
+                    <?php echo file_get_contents(get_template_directory_uri()."/assets/img/services-stripe.svg", false, stream_context_create($arrContextOptions)); ?>
+                </div>
                 <div class="row">
                     <div class="container-skew">
                         <div class="skew-center">
@@ -234,6 +237,8 @@ $arrContextOptions=array(
                 </div>
             </div>
         </div>
+        <div class="fade-block reversed"></div>
     </div>
+    <div class="particles-js"></div>
 </section>
 <?php get_footer(); ?>
