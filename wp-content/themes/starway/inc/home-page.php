@@ -237,8 +237,101 @@ $arrContextOptions=array(
                 </div>
             </div>
         </div>
-        <div class="fade-block reversed"></div>
+        <div class="fade-block reversed light"></div>
     </div>
-    <div class="particles-js"></div>
 </section>
+<section class="group our-clients our-contacts">
+<!--    <div class="particles-js"></div>-->
+
+<!--    <div class="skew-left cover-bg">-->
+<!--        --><?php // echo file_get_contents(get_template_directory_uri()."/assets/img/clients-bg.svg", false, stream_context_create($arrContextOptions)); ?>
+<!--        <div class="our-clients-cover unskew-child">-->
+<!--            <div class="fade-block reversed unskew-child"></div>-->
+<!--        </div>-->
+<!--    </div>-->
+
+    <div class="container our-clients-block">
+        <div class="row space-top-x2">
+            <div class="section-title light-text group" title="Our Works">
+                Our Clients
+            </div>
+        </div>
+        <div class="row flexbox-container" style="margin-top:250px">
+            <div class="header-content col-md-8 vertical-center">
+                <div class="skew-left accent-block accent-red"></div>
+                <div class="skew-left additional-bg smaller bg-gradient"></div>
+                <div class="skew-right additional-bg bigger bg-gradient"></div>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="clients-slide">
+                                <div class="client-photo"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/clients/victoria.jpg" /></div>
+                                <div class="light-text space-bottom-x2 client-title flexbox-container">
+                                    <div class="company-logo vertical-center">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/clients/law.svg" />
+                                    </div>
+                                    LAW Company
+                                </div>
+                                <p class="light-text testimonial col-md-10">Lorem ipsum dolor sit amet, consectetur a dipiscing elit, sed do eiusmod tempor i
+                                    ncididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco Lorem ipsum dolor sit amet, consectetur a dipiscing elit, sed do eiusmod tempor i
+                                    ncididunt ut labore et dolore magna aliqua.
+                                </p>
+                                <div class="author pull-right light-text">
+                                    VIKTORIYA BONDARYK-CROSKEY
+                                    <div class="author-position text-right">
+                                        MARKETING CMO
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="clients-slide">
+                                <div class="client-photo"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/clients/victoria.jpg" /></div>
+                                <div class="light-text space-bottom-x2 client-title flexbox-container">
+                                    <div class="company-logo vertical-center">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/clients/law.svg" />
+                                    </div>
+                                    LAW Company
+                                </div>
+                                <p class="light-text testimonial">Lorem ipsum dolor sit amet, consectetur a dipiscing elit, sed do eiusmod tempor i
+                                    ncididunt ut labore et dolore magna aliqua.
+                                </p>
+                                <div class="author pull-right light-text space-top-x2">
+                                    BONDARYK-CROSKEY
+                                    <div class="author-position">
+                                        MARKETING CMO
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="clients-slide">
+                                <div class="client-photo"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/clients/victoria.jpg" /></div>
+                                <div class="light-text space-bottom-x2 client-title flexbox-container">
+                                    <div class="company-logo vertical-center">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/clients/law.svg" />
+                                    </div>
+                                    LAW Company
+                                </div>
+                                <p class="light-text testimonial">Lona aliqua.
+                                </p>
+                                <div class="author pull-right light-text space-top-x2">
+                                    VIKTORIYA BON
+                                    <div class="author-position">
+                                        MARKETING CMO
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+</section>
+
 <?php get_footer(); ?>

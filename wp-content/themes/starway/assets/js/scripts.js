@@ -251,6 +251,14 @@ $(document).ready(function () {
     }
     $('html').smoothScroll(500);
     parallaxEffect();
+
+
+    var swiper = new Swiper('.swiper-container', {
+        //effect: 'cube',
+        //spaceBetween: 30,
+        direction: 'vertical',
+        //mousewheel: true
+    });
 });
 
 $(window).on("load", function () {
