@@ -333,5 +333,35 @@ $arrContextOptions=array(
     </div>
 
 </section>
+<section class="contacts-block">
+    <div class="container">
+        <div class="row space-top-x2">
+            <div class="section-title group text-center">
+                Our Services
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="flexbox-container" >
+                <div class="col-md-8 vertical-center">
+                    <?php echo do_shortcode('[contact-form-7 id="10" title="Contacts"]')?>
+                </div>
+            </div>
+        </div>
+    </div>
 
+</section>
+<!--<div class="row form-group">-->
+<!--    <div class="col-md-6">[text* client-name placeholder:"Your Name" ]</div>-->
+<!--    <div class="col-md-6">[select* selected-services id:selected-services placeholder:"Service" "Logo Design" "Web design" "UX/UI design" "iOS Development" "Graphic design" "Branding" "App Development" "Quality Assurance" "Content management" "Seo promotion" "Infrastructure management and information security services" "Technical Support"  "Аrchitectural design"  "Photo & Video Graphic"]</div>-->
+<!--</div>-->
+<!--<div class="row form-group">-->
+<!--    <div class="col-md-6"> [email* client-email  placeholder:"Your Email"]</div>-->
+<!--    <div class="col-md-6"> [text*  client-Phone placeholder:"Your Phone"]</div>-->
+<!--</div>-->
+<!--<div class="row form-group">-->
+<!--    <div class="col-md-12">[textarea client-message placeholder:"Tell Your Vision"]</div>-->
+<!--    <div class="col-md-6 pull-right">[submit class:btn "Get Started"]</div>-->
+<!--</div>-->
 <?php get_footer(); ?>
