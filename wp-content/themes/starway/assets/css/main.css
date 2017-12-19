@@ -721,6 +721,11 @@ body{
   border: 0;
 }
 
+form .form-group {
+  margin-bottom: 20px;
+  position: relative;
+}
+
 /*Removing all outlines*/
 .btn-default, button {
   outline: none !important;
