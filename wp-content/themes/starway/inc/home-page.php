@@ -335,7 +335,7 @@ $arrContextOptions=array(
 </section>
 <section class="contacts-block group">
     <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/contact-stripe.svg", false, stream_context_create($arrContextOptions)); ?>
-    <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/contact-triangle.svg", false, stream_context_create($arrContextOptions)); ?>
+    <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/contact-triangles.svg", false, stream_context_create($arrContextOptions)); ?>
 
     <div class="container">
         <div class="row space-top-x2 space-bottom-x2">
@@ -361,17 +361,16 @@ $arrContextOptions=array(
 
 
 
-
 <!--<div class="row form-group">-->
-<!--    <div class="col-md-6">[text* client-name placeholder:"Your Name" ]</div>-->
-<!--    <div class="col-md-6">[select* selected-services id:selected-services placeholder:"Service" "Logo Design" "Web design" "UX/UI design" "iOS Development" "Graphic design" "Branding" "App Development" "Quality Assurance" "Content management" "Seo promotion" "Infrastructure management and information security services" "Technical Support"  "Аrchitectural design"  "Photo & Video Graphic"]</div>-->
+<!--    <div class="col-md-6">[text* client-name class:form-control placeholder:"Your Name" ]</div>-->
+<!--    <div class="col-md-6">[select* selected-services id:selected-services class:form-control placeholder:"Service" "Logo Design" "Web design" "UX/UI design" "iOS Development" "Graphic design" "Branding" "App Development" "Quality Assurance" "Content management" "Seo promotion" "Infrastructure management and information security services" "Technical Support"  "Аrchitectural design"  "Photo & Video Graphic"]</div>-->
 <!--</div>-->
 <!--<div class="row form-group">-->
-<!--    <div class="col-md-6"> [email* client-email  placeholder:"Your Email"]</div>-->
-<!--    <div class="col-md-6"> [text*  client-Phone placeholder:"Your Phone"]</div>-->
+<!--    <div class="col-md-6"> [email* client-email class:form-control placeholder:"Your Email"]</div>-->
+<!--    <div class="col-md-6"> [text*  client-Phone class:form-control placeholder:"Your Phone"]</div>-->
 <!--</div>-->
 <!--<div class="row form-group">-->
-<!--    <div class="col-md-12">[textarea client-message placeholder:"Tell Your Vision"]</div>-->
-<!--    <div class="col-md-6 pull-right">[submit class:btn "Get Started"]</div>-->
+<!--    <div class="col-md-12">[textarea client-message class:form-control placeholder:"Tell Your Vision"]</div>-->
+<!--    <div class="col-md-12 space-top-x2">[submit class:btn  class:btn-medium class:pull-right class:btn-action "Get Started"]</div>-->
 <!--</div>-->
 <?php get_footer(); ?>

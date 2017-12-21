@@ -870,9 +870,16 @@ input:focus, textarea:focus, select:focus, input:active, textarea:active, select
 /*footer*/
 footer#colophon {
   background-color:#000;
+  position:relative;
+  z-index:2;
+}
+#colophon #ft-triangles {
+  position:absolute;
+  width: 20%;
+  right: 30px;
+  top: -25%;;
 }
 .site-footer {
-  position:relative;
   padding:10% 0;
 }
 .site-footer .block-skew  {

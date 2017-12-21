@@ -9,7 +9,8 @@ $arrContextOptions=array(
 ?>
 	</div>
 
-	<footer id="colophon" >
+	<footer id="colophon">
+        <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/footer-triangle.svg", false, stream_context_create($arrContextOptions)); ?>
         <div class="container">
             <div class="site-footer ">
                 <div class="row">

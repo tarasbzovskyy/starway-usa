@@ -259,6 +259,12 @@ $(document).ready(function () {
         direction: 'vertical',
         //mousewheel: true
     });
+
+    if (window.matchMedia("(min-width:400px)").matches) {
+        // > 400px
+    } else {
+        // < 400px
+    }
 });
 
 $(window).on("load", function () {
