@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="ct-para" class="unskew-child" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 396.6 279.1" style="enable-background:new 0 0 396.6 279.1;" xml:space="preserve">
+<style type="text/css">
+	.para-st0{opacity:0.21;}
+	.para-st1{fill:url(#para-SVGID_1_);}
+</style>
+<g class="para-st0">
+		<linearGradient id="para-SVGID_1_" gradientUnits="userSpaceOnUse" x1="539.7251" y1="37.7762" x2="208.175" y2="369.3261" gradientTransform="matrix(-1 0 0 -1 574 340.5512)">
+		<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0.1"/>
+		<stop  offset="1" style="stop-color:#14042B"/>
+	</linearGradient>
+	<polygon class="para-st1" points="5.6,274.1 242.4,274.3 396.5,1.9 155.1,2.3 	"/>
+</g>
+</svg>

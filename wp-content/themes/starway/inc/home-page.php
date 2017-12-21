@@ -147,6 +147,9 @@ $arrContextOptions=array(
 </section>
 <section class="group">
     <div id="services" class="group">
+        <div class="services-stripe-block">
+            <?php echo file_get_contents(get_template_directory_uri()."/assets/img/services-stripe.svg", false, stream_context_create($arrContextOptions)); ?>
+        </div>
         <div class="container">
             <div class="row space-top-x2">
                 <div class="section-title group" title="Our Services">
@@ -155,9 +158,6 @@ $arrContextOptions=array(
             </div>
             <div class="group">
                 <div class="skew-left accent-block accent-black"></div>
-                <div class="services-stripe-block">
-                    <?php echo file_get_contents(get_template_directory_uri()."/assets/img/services-stripe.svg", false, stream_context_create($arrContextOptions)); ?>
-                </div>
                 <div class="row">
                     <div class="container-skew">
                         <div class="skew-center">
@@ -237,26 +237,29 @@ $arrContextOptions=array(
                 </div>
             </div>
         </div>
-        <div class="fade-block reversed light"></div>
+        <div class="fade-block light"></div>
     </div>
 </section>
 <section class="group our-clients our-contacts">
-<!--    <div class="particles-js"></div>-->
+    <div class="particles-js"></div>
+    <div class="fade-block reversed light"></div>
 
-<!--    <div class="skew-left cover-bg">-->
-<!--        --><?php // echo file_get_contents(get_template_directory_uri()."/assets/img/clients-bg.svg", false, stream_context_create($arrContextOptions)); ?>
-<!--        <div class="our-clients-cover unskew-child">-->
-<!--            <div class="fade-block reversed unskew-child"></div>-->
-<!--        </div>-->
-<!--    </div>-->
+    <div class="skew-left cover-bg">
+        <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/clients-bg.svg", false, stream_context_create($arrContextOptions)); ?>
+        <div class="our-clients-cover unskew-child">
+            <div class="fade-block reversed unskew-child"></div>
+        </div>
+        <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/contact-para.svg", false, stream_context_create($arrContextOptions)); ?>
+        <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/contact-para-2.svg", false, stream_context_create($arrContextOptions)); ?>
+    </div>
 
     <div class="container our-clients-block">
         <div class="row space-top-x2">
-            <div class="section-title light-text group" title="Our Works">
-                Our Clients
+            <div class="section-title light-text group" title="Clients Comments">
+               Clients Comments
             </div>
         </div>
-        <div class="row flexbox-container" style="margin-top:250px">
+        <div class="row flexbox-container">
             <div class="header-content col-md-8 vertical-center">
                 <div class="skew-left accent-block accent-red"></div>
                 <div class="skew-left additional-bg smaller bg-gradient"></div>
@@ -327,24 +330,24 @@ $arrContextOptions=array(
                 </div>
             </div>
         </div>
-
-
-
     </div>
 
 </section>
-<section class="contacts-block">
+<section class="contacts-block group">
+    <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/contact-stripe.svg", false, stream_context_create($arrContextOptions)); ?>
+    <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/contact-triangle.svg", false, stream_context_create($arrContextOptions)); ?>
+
     <div class="container">
-        <div class="row space-top-x2">
-            <div class="section-title group text-center">
-                Our Services
+        <div class="row space-top-x2 space-bottom-x2">
+            <div class="section-title light-text text-center">
+                Contact Us
             </div>
         </div>
     </div>
     <div class="container">
         <div class="row">
             <div class="flexbox-container" >
-                <div class="col-md-8 vertical-center">
+                <div class="col-md-8 vertical-center light-text">
                     <?php echo do_shortcode('[contact-form-7 id="10" title="Contacts"]')?>
                 </div>
             </div>
@@ -352,6 +355,13 @@ $arrContextOptions=array(
     </div>
 
 </section>
+
+
+
+
+
+
+
 <!--<div class="row form-group">-->
 <!--    <div class="col-md-6">[text* client-name placeholder:"Your Name" ]</div>-->
 <!--    <div class="col-md-6">[select* selected-services id:selected-services placeholder:"Service" "Logo Design" "Web design" "UX/UI design" "iOS Development" "Graphic design" "Branding" "App Development" "Quality Assurance" "Content management" "Seo promotion" "Infrastructure management and information security services" "Technical Support"  "Аrchitectural design"  "Photo & Video Graphic"]</div>-->

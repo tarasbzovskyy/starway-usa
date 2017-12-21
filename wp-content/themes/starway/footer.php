@@ -1,32 +1,71 @@
 <?php
-/**
- * The template for displaying the footer
- *
- * Contains the closing of the #content div and all content after.
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package starway
- */
 
+$arrContextOptions=array(
+    "ssl"=>array(
+        "verify_peer"=>false,
+        "verify_peer_name"=>false,
+    ),
+);
 ?>
+	</div>
 
-	</div><!-- #content -->
-
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'starway' ) ); ?>"><?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'starway' ), 'WordPress' );
-			?></a>
-			<span class="sep"> | </span>
-			<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'starway' ), 'starway', '<a href="http://underscores.me/">Underscores.me</a>' );
-			?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+	<footer id="colophon" >
+        <div class="container">
+            <div class="site-footer ">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="section-title light-text space-bottom-x2">
+                            Our<br/>Contacts
+                        </div>
+                        <div class="footer-info light-text">
+                            <p>INFO@STARWAYUSA.COM</p>
+                            <p>+1 (773) 312-38-87</p>
+                        </div>
+                        <a class="btn btn-action btn-medium btn-lined space-top-x2 ">
+                            Get Started
+                        </a>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="social-block group">
+                            <div class="accent-block accent-red skew-right"></div>
+                            <div class="row">
+                                <div class="col-md-offset-4 col-xs-offset-0 col-md-3 space-top">
+                                    <div class="block-skew skew-left block-item">
+                                        <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/social/fb.svg", false, stream_context_create($arrContextOptions)); ?>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 space-top">
+                                    <div class="block-skew skew-left block-item">
+                                        <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/social/insta.svg", false, stream_context_create($arrContextOptions)); ?>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row space-top">
+                                <div class="col-md-offset-3 col-xs-offset-0 col-md-3 space-top">
+                                    <div class="block-skew skew-left block-item">
+                                        <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/social/g-plus.svg", false, stream_context_create($arrContextOptions)); ?>
+                                    </div>
+                                </div>
+                                <div class="col-md-3 space-top">
+                                    <div class="block-skew skew-left block-item ">
+                                        <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/social/linked.svg", false, stream_context_create($arrContextOptions)); ?>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="copyright light-text">&copy; 2017 All Rights Reserved. StarWay USA</p>
+                </div>
+            </div>
+        </div>
+	</footer>
+</div>
 
 <?php wp_footer(); ?>
 

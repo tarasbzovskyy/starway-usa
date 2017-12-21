@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="ft-triangles" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 252 167" style="enable-background:new 0 0 252 167;" xml:space="preserve">
+<style type="text/css">
+	.tr-ft-st0{fill-rule:evenodd;clip-rule:evenodd;fill:url(#tr-ft-SVGID_1_);}
+	.tr-ft-st1{fill-rule:evenodd;clip-rule:evenodd;fill:url(#tr-ft-SVGID_2_);}
+</style>
+<linearGradient id="tr-ft-SVGID_1_" gradientUnits="userSpaceOnUse" x1="1908.9685" y1="9524.5605" x2="2025.0529" y2="9524.5605" gradientTransform="matrix(-1 0 0 -1 2159.7153 9613.6797)">
+	<stop  offset="0" style="stop-color:#14042B"/>
+	<stop  offset="1" style="stop-color:#080912"/>
+</linearGradient>
+<polygon class="tr-ft-st0" points="250.7,139.4 192.8,38.9 134.7,139.2 "/>
+<linearGradient id="tr-ft-SVGID_2_" gradientUnits="userSpaceOnUse" x1="1789.4211" y1="9468.5186" x2="1976.8589" y2="9468.5186" gradientTransform="matrix(-1 0 0 -1 1978.1003 9551.9209)">
+	<stop  offset="0" style="stop-color:#14042B"/>
+	<stop  offset="1" style="stop-color:#080912"/>
+</linearGradient>
+<polygon class="tr-ft-st1" points="188.7,164.5 95.2,2.3 1.2,164.3 "/>
+</svg>

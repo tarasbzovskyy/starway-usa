@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="ct-para2" class="unskew-child" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 311.6 289.1" style="enable-background:new 0 0 311.6 289.1;" xml:space="preserve">
+<style type="text/css">
+	.para2-st0{opacity:0.61;}
+	.para2-st1{fill:url(#para2-SVGID_1_);}
+	.para2-st2{opacity:0.21;}
+	.para2-st3{fill:url(#para2-SVGID_2_);}
+</style>
+<g class="para2-st0">
+	
+		<linearGradient id="para2-SVGID_1_" gradientUnits="userSpaceOnUse" x1="551.275" y1="30.3012" x2="288.675" y2="292.9012" gradientTransform="matrix(-1 0 0 -1 574 340.5512)">
+		<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0.1"/>
+		<stop  offset="0.4247" style="stop-color:#BEBACB;stop-opacity:0.2742"/>
+		<stop  offset="1" style="stop-color:#14042B"/>
+	</linearGradient>
+	<polygon class="para2-st1" points="0,287.5 187.6,287.7 309.6,71.9 118.4,72.2 	"/>
+</g>
+<g class="st2">
+	
+		<linearGradient id="para2-SVGID_2_" gradientUnits="userSpaceOnUse" x1="533.25" y1="202.4262" x2="382.55" y2="353.1262" gradientTransform="matrix(-1 0 0 -1 574 340.5512)">
+		<stop  offset="0" style="stop-color:#FFFFFF;stop-opacity:0.1"/>
+		<stop  offset="1" style="stop-color:#14042B"/>
+	</linearGradient>
+	<polygon class="para2-st3" points="27.7,125.1 135.4,125.2 205.4,1.4 95.7,1.5 	"/>
+</g>
+</svg>
