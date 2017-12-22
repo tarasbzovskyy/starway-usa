@@ -19,14 +19,16 @@ $arrContextOptions=array(
             <div class="header-content col-md-8 vertical-center">
                 <div class="skew-left additional-bg smaller bg-gradient"></div>
                 <div class="skew-right additional-bg bigger bg-gradient"></div>
-                <div class="group">
-                    <h1 class="light-text space-bottom-x2">FEW WORDS ABOUT COMPANY</h1>
-                    <p class="light-text">Lorem ipsum dolor sit amet, consectetur a dipiscing elit, sed do eiusmod tempor i
-                        ncididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        quis nostrud exercitation ullamco</p>
-                    <a class="btn btn-action space-top-x2 ">
-                        Get Started
-                    </a>
+                <div class="group block-reveal">
+                    <div class="sliding-in">
+                        <h1 class="light-text space-bottom-x2">FEW WORDS ABOUT COMPANY</h1>
+                        <p class="light-text">Lorem ipsum dolor sit amet, consectetur a dipiscing elit, sed do eiusmod tempor i
+                            ncididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco</p>
+                        <a class="btn btn-action space-top-x2 ">
+                            Get Started
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -46,9 +48,12 @@ $arrContextOptions=array(
     <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/triangle-reverse.svg", false, stream_context_create($arrContextOptions)); ?>
         <div class="container">
             <div class="fade-block"></div>
-            <div class="row space-top-x2">
-                <div class="section-title light-text group" title="Our Works">
+            <div class="row space-top-x2 block-reveal">
+                <div class="sliding-in">
+
+                    <div class="section-title light-text group" title="Our Works">
                     Our Works
+                    </div>
                 </div>
             </div>
             <div class="group">

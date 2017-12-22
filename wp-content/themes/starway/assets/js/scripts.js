@@ -240,6 +240,28 @@ function frt_noWords(e) {
     }
 };
 
+function scrollingAnimation(target) {
+    var el = $(target);
+    el.each(function(e,a){
+
+    })
+    el.waypoint(function(direction){
+            console.log($(this));
+            $(this).addClass('on-screen')
+
+
+
+
+        },
+            {
+                offset: '35%'
+
+            }
+        )
+
+}
+
+
 //functions init
 $(document).ready(function () {
     menuButton();
@@ -265,6 +287,7 @@ $(document).ready(function () {
     } else {
         // < 400px
     }
+    scrollingAnimation('.block-reveal')
 });
 
 $(window).on("load", function () {

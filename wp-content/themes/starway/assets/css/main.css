@@ -23,6 +23,9 @@ html {
 body,html {
   height:100%;
 }
+body > section {
+  /*background-color:#fff;*/
+}
 ol, ul {
   list-style: none; }
 
@@ -327,6 +330,7 @@ svg {width:100%;}
   background: url(../img/city-starway.jpg) no-repeat center bottom;
   background-size: cover;
   padding-bottom: 10%;
+  overflow-x: hidden;
 }
 #portfolio > svg {
   position:absolute;
@@ -848,12 +852,21 @@ input:focus, textarea:focus, select:focus, input:active, textarea:active, select
   z-index:-1;
 }
 
-/*zaebis loading block@@@@@@@@@@@@@*/
-
-.on-screen .block-reveal:after {
-  transform: translateX(101%);
+.on-screen.block-reveal:after {
+  transform: translateX(104%);
 }
+.sliding-in {
+  opacity: 0;
+  transition: opacity 0.230s linear;
+  transition-delay:.23s;
+}
+.on-screen .sliding-in {
+  opacity:1;
+}
+.block-reveal {
+  overflow:hidden;
 
+}
 .block-reveal:after {
   content: "";
   position: absolute;
@@ -861,10 +874,10 @@ input:focus, textarea:focus, select:focus, input:active, textarea:active, select
   width: 100%;
   height: 100%;
   left: 0;
-  transform: translateX(-101%);
+  transform: translateX(-104%);
   top: 0;
-  background: #b58759;
-  transition: all 750ms cubic-bezier(0.285, 0.105, 0.465, 1.015);
+  background: #fff;
+  transition: all 760ms cubic-bezier(0.285, 0.105, 0.465, 1.015);
 }
 
 /*footer*/
