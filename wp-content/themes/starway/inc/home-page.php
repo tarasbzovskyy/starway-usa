@@ -13,7 +13,7 @@ $arrContextOptions=array(
 ?>
 <?php get_header(); ?>
 
-<section class="main-header group">
+<section class="main-header group viewpoint">
     <div class="container ">
         <div class="flexbox-container full-height">
             <div class="header-content col-md-8 vertical-center">
@@ -39,7 +39,7 @@ $arrContextOptions=array(
         echo file_get_contents(get_template_directory_uri()."/assets/img/parallels-right.svg", false, stream_context_create($arrContextOptions));
     ?>
 </section>
-<section class="group">
+<section class="group viewpoint">
     <?php
         echo file_get_contents(get_template_directory_uri()."/assets/img/triangles.svg", false, stream_context_create($arrContextOptions));
         echo file_get_contents(get_template_directory_uri()."/assets/img/para.svg", false, stream_context_create($arrContextOptions));
@@ -48,16 +48,19 @@ $arrContextOptions=array(
     <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/triangle-reverse.svg", false, stream_context_create($arrContextOptions)); ?>
         <div class="container">
             <div class="fade-block"></div>
-            <div class="row space-top-x2 block-reveal">
-                <div class="sliding-in">
-
-                    <div class="section-title light-text group" title="Our Works">
-                    Our Works
+            <div class="row space-top-x2 ">
+                <div class="block-reveal">
+                    <div class="sliding-in">
+                        <div class="section-title light-text group" title="Our Works">
+                            Our Works
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="group">
-                <div class="skew-left accent-block accent-red"></div>
+                <div class="walking-block">
+                    <div class="skew-left accent-block accent-red"></div>
+                </div>
                 <div class="row">
                     <div class="container-skew">
                         <div class="skew-center">
@@ -150,7 +153,7 @@ $arrContextOptions=array(
         ?>
     </div>
 </section>
-<section class="group">
+<section class="group viewpoint">
     <div id="services" class="group">
         <div class="services-stripe-block">
             <?php echo file_get_contents(get_template_directory_uri()."/assets/img/services-stripe.svg", false, stream_context_create($arrContextOptions)); ?>
@@ -162,7 +165,9 @@ $arrContextOptions=array(
                 </div>
             </div>
             <div class="group">
-                <div class="skew-left accent-block accent-black"></div>
+                <div class="walking-block">
+                    <div class="skew-left accent-block accent-black"></div>
+                </div
                 <div class="row">
                     <div class="container-skew">
                         <div class="skew-center">
@@ -245,7 +250,7 @@ $arrContextOptions=array(
         <div class="fade-block light"></div>
     </div>
 </section>
-<section class="group our-clients our-contacts">
+<section class="group our-clients our-contacts viewpoint">
     <div class="particles-js"></div>
     <div class="fade-block reversed light"></div>
 
@@ -266,7 +271,9 @@ $arrContextOptions=array(
         </div>
         <div class="row flexbox-container">
             <div class="header-content col-md-8 vertical-center">
-                <div class="skew-left accent-block accent-red"></div>
+                <div class="walking-block" data-step="200">
+                    <div class="skew-left accent-block accent-red"></div>
+                </div>
                 <div class="skew-left additional-bg smaller bg-gradient"></div>
                 <div class="skew-right additional-bg bigger bg-gradient"></div>
                 <div class="swiper-container">
@@ -338,7 +345,7 @@ $arrContextOptions=array(
     </div>
 
 </section>
-<section class="contacts-block group">
+<section class="contacts-block group viewpoint">
     <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/contact-stripe.svg", false, stream_context_create($arrContextOptions)); ?>
     <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/contact-triangle.svg", false, stream_context_create($arrContextOptions)); ?>
 

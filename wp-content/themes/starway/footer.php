@@ -9,7 +9,7 @@ $arrContextOptions=array(
 ?>
 	</div>
 
-	<footer id="colophon">
+	<footer id="colophon" class="viewpoint">
         <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/footer-triangle.svg", false, stream_context_create($arrContextOptions)); ?>
         <div class="container">
             <div class="site-footer ">
@@ -28,7 +28,9 @@ $arrContextOptions=array(
                     </div>
                     <div class="col-md-6">
                         <div class="social-block group">
-                            <div class="accent-block accent-red skew-right"></div>
+                            <div class="walking-block">
+                                <div class="accent-block accent-red skew-right"></div>
+                            </div>
                             <div class="row">
                                 <div class="col-md-offset-4 col-xs-offset-0 col-md-3 space-top">
                                     <div class="block-skew skew-left block-item">

@@ -242,25 +242,43 @@ function frt_noWords(e) {
 
 function scrollingAnimation(target) {
     var el = $(target);
-    el.each(function(e,a){
-
-    })
-    el.waypoint(function(direction){
-            console.log($(this));
+    var waypoints = el.waypoint(function(direction) {
+        $(this.element).each(function(){
             $(this).addClass('on-screen')
-
-
-
-
-        },
-            {
-                offset: '35%'
-
-            }
-        )
+        });
+    }, {
+        offset: '50%'
+    })
 
 }
 
+
+function mouseParallax(target) {
+    var element = $(target);
+
+    element.each(function(){
+
+        var that = this,
+            view = $(that).parents('.viewpoint'),
+            getStep = $(that).data('step'),
+            step = 150;
+
+        if (typeof getStep !== "undefined" || typeof getStep !== 0 ) {
+            step = getStep;
+        }
+
+        view.mousemove(function(e){
+            var xx = e.clientX,
+                yy = e.clientY;
+
+                $(that).css({
+                'transform': 'translate(-'+ xx/step +'% ,-' + yy/step + '%)'
+            })
+
+        })
+    })
+
+}
 
 //functions init
 $(document).ready(function () {
@@ -287,7 +305,8 @@ $(document).ready(function () {
     } else {
         // < 400px
     }
-    scrollingAnimation('.block-reveal')
+    scrollingAnimation('.block-reveal');
+    mouseParallax('.walking-block');
 });
 
 $(window).on("load", function () {
