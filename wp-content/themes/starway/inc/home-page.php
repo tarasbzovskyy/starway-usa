@@ -340,7 +340,7 @@ $arrContextOptions=array(
 </section>
 <section class="contacts-block group">
     <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/contact-stripe.svg", false, stream_context_create($arrContextOptions)); ?>
-    <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/contact-triangles.svg", false, stream_context_create($arrContextOptions)); ?>
+    <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/contact-triangle.svg", false, stream_context_create($arrContextOptions)); ?>
 
     <div class="container">
         <div class="row space-top-x2 space-bottom-x2">
