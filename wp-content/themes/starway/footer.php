@@ -22,7 +22,7 @@ $arrContextOptions=array(
                             <p>INFO@STARWAYUSA.COM</p>
                             <p>+1 (773) 312-38-87</p>
                         </div>
-                        <a class="btn btn-action btn-medium btn-lined space-top-x2 ">
+                        <a class="btn btn-action btn-medium btn-lined space-top-x2 show-contact-form">
                             Get Started
                         </a>
                     </div>
@@ -31,7 +31,7 @@ $arrContextOptions=array(
                             <div class="walking-block" data-step="230">
                                 <div class="accent-block accent-red skew-right"></div>
                             </div>
-                            <div class="row col-xs-6">
+                            <div class="row col-xs-6 col-md-12">
                                 <div class="col-md-offset-4 col-xs-offset-0 col-md-3 space-top col-xs-6">
                                     <div class="block-skew skew-left block-item">
                                         <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/social/fb.svg", false, stream_context_create($arrContextOptions)); ?>
@@ -43,7 +43,7 @@ $arrContextOptions=array(
                                     </div>
                                 </div>
                             </div>
-                            <div class="row space-top col-xs-6">
+                            <div class="row space-top col-xs-6 col-md-12">
                                 <div class="col-md-offset-3 col-xs-offset-0 col-md-3 col-xs-6 space-top">
                                     <div class="block-skew skew-left block-item">
                                         <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/social/g-plus.svg", false, stream_context_create($arrContextOptions)); ?>

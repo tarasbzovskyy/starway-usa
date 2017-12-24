@@ -85,17 +85,6 @@
   {
     left:0;
   }
-  /*.skew-left,*/
-  /*.skew-right,*/
-  /*.block-skew > *,*/
-  /*.block-skew > span,*/
-  /*.unskew-child {*/
-    /*-moz-transform: skew(0deg, 0deg);*/
-    /*-webkit-transform: skew(0deg, 0deg);*/
-    /*-o-transform: skew(0deg, 0deg);*/
-    /*-ms-transform: skew(0deg, 0deg);*/
-    /*transform: skew(0deg, 0deg);*/
-  /*}*/
 
   #ct-triangles,
   #contact-stripes,
@@ -142,10 +131,12 @@
   .site-footer .block-skew svg {
     padding: 6%;
   }
-  #colophon #ft-triangle {
-    top:-20px;
+  .main-header svg#parallels-left {
+    width:100%;
   }
-
+  .main-header svg#parallels-right {
+    display:none;
+  }
 }
 
 @media (max-width:1045px) {
@@ -157,7 +148,10 @@
 
 @media (max-width:991px) {
   #page > section {
-    overflow-x:hidden;
+    overflow:hidden;
+  }
+  #colophon #ft-triangles {
+    top:-20px;
   }
 }
 

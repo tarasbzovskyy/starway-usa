@@ -260,7 +260,7 @@ $arrContextOptions=array(
         <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/contact-para-2.svg", false, stream_context_create($arrContextOptions)); ?>
     </div>
 
-    <div class="container our-clients-block">
+    <div id="clients" class="container our-clients-block">
         <div class="row space-top-x2">
             <div class="section-title light-text group" title="Clients Comments">
                Clients Comments
@@ -340,9 +340,8 @@ $arrContextOptions=array(
             </div>
         </div>
     </div>
-
 </section>
-<section class="contacts-block group viewpoint">
+<section id="contacts" class="contacts-block group viewpoint">
     <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/contact-stripe.svg", false, stream_context_create($arrContextOptions)); ?>
     <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/contact-triangle.svg", false, stream_context_create($arrContextOptions)); ?>
 
