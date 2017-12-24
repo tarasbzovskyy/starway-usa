@@ -130,9 +130,10 @@ function starway_scripts() {
     wp_enqueue_style( 'starway-style', get_stylesheet_uri() ); //default styles
 	wp_enqueue_style('bootstrap_css', $CSS_folder . 'bootstrap.min.css',array(), '1.0.0');
 	wp_enqueue_style('swiper_css', $CSS_folder . 'swiper.min.css',array(), '1.0.0');
-	wp_enqueue_style('main_css', $CSS_folder . 'main.css',array(), '1.0.0');
+    wp_enqueue_style('main_css', $CSS_folder . 'main.css',array(), '1.0.0');
+    wp_enqueue_style('responsive_css', $CSS_folder . 'responsive.css',array(), '1.0.0');
 
-	// CONNECT JS
+    // CONNECT JS
 	wp_enqueue_script('jquery', $JS_folder . 'jquery.min.js',array(), '1.0.0');
 	wp_enqueue_script('bootstrap_js', $JS_folder . 'bootstrap.min.js',array(), '1.0.0');
 	wp_enqueue_script('anime_js', $JS_folder . 'anime.min.js',array(), '1.0.0');

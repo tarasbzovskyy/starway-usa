@@ -327,15 +327,22 @@ svg {width:100%;}
   margin-top:12%;
 }
 #portfolio {
-  background: url(../img/city-starway.jpg) no-repeat center bottom;
-  background-size: cover;
   padding-bottom: 10%;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 #portfolio > svg {
   position:absolute;
   top:15%;
   z-index:0;
+}
+#portfolio > .parallax-background {
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:130%;
+  background: url(../img/city-starway.jpg) no-repeat center top;
+  background-size: cover;
 }
 .portfolio-footer {
   overflow:hidden;
@@ -710,7 +717,7 @@ svg {width:100%;}
 .clients-slide .client-photo img{
   position:absolute;
   top: -29px;
-  left: -27px;
+  left: -29px;
   max-width: 140%;
   transform: rotate(-46deg);
   -webkit-transform: rotate(-46deg);
@@ -720,7 +727,7 @@ svg {width:100%;}
 
 .swiper-container {
   width:100%;
-  height: 400px;
+  height: 450px;
 }
 .our-clients-block > .flexbox-container {
   justify-content: center;
@@ -839,7 +846,7 @@ input:focus, textarea:focus, select:focus, input:active, textarea:active, select
 
 .contacts-block #ct-triangles{
   position:absolute;
-  top:-20%;
+  top:-55%;
   left:5%;
   width:20%;
 }
@@ -910,4 +917,21 @@ footer#colophon {
 }
 .copyright {
   padding-bottom:15px;
+}
+
+/*Animate Css*/
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInLeft {
+  animation-name: fadeInLeft;
 }
