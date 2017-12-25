@@ -137,6 +137,9 @@
   .main-header svg#parallels-right {
     display:none;
   }
+  #site-navigation {
+    left:30px;
+  }
 }
 
 @media (max-width:1045px) {

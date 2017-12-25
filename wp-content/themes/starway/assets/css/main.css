@@ -152,7 +152,7 @@ header {
   transition-delay: .15s;
 }
 .menu-main-menu-container li a::after {
-  right:-15px;
+  right:0;
 }
 .menu-main-menu-container li a:hover::before,
 .menu-main-menu-container li.current_page_item a {
@@ -166,7 +166,7 @@ header {
   display:inline-block;
   position:relative;
   padding-left:40px;
-  padding-right:40px;
+  padding-right:60px;
   overflow:hidden;
 }
 
