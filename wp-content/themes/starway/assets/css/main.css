@@ -72,7 +72,7 @@ a:hover,#site-navigation a:hover {
   color:#fff;
   font-size:45pt;
   text-transform: uppercase;
-  line-height: 50px;
+  line-height: 58px;
   font-weight:800;
 }
 #site-navigation  {
@@ -152,12 +152,14 @@ header {
   transition-delay: .15s;
 }
 .menu-main-menu-container li a::after {
-  right:20px;
+  right:-15px;
 }
-.menu-main-menu-container li a:hover::before {
+.menu-main-menu-container li a:hover::before,
+.menu-main-menu-container li.current_page_item a {
   left:25px;
 }
-.menu-main-menu-container li a:hover::after {
+.menu-main-menu-container li a:hover::after,
+.menu-main-menu-container li.current_page_item a {
   right:-45px;
 }
 .menu-main-menu-container li a {

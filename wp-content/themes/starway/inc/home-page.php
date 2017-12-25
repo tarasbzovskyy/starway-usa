@@ -364,21 +364,4 @@ $arrContextOptions=array(
 
 </section>
 
-
-
-
-
-
-<!--<div class="row form-group">-->
-<!--    <div class="col-md-6">[text* client-name class:form-control placeholder:"Your Name" ]</div>-->
-<!--    <div class="col-md-6">[select* selected-services id:selected-services class:form-control placeholder:"Service" "Logo Design" "Web design" "UX/UI design" "iOS Development" "Graphic design" "Branding" "App Development" "Quality Assurance" "Content management" "Seo promotion" "Infrastructure management and information security services" "Technical Support"  "Аrchitectural design"  "Photo & Video Graphic"]</div>-->
-<!--</div>-->
-<!--<div class="row form-group">-->
-<!--    <div class="col-md-6"> [email* client-email class:form-control placeholder:"Your Email"]</div>-->
-<!--    <div class="col-md-6"> [text*  client-Phone class:form-control class:only-number placeholder:"Your Phone"]</div>-->
-<!--</div>-->
-<!--<div class="row form-group">-->
-<!--    <div class="col-md-12">[textarea client-message class:form-control placeholder:"Tell Your Vision"]</div>-->
-<!--    <div class="col-md-12 space-top-x2">[submit class:btn  class:btn-medium class:pull-right class:btn-action "Get Started"]</div>-->
-<!--</div>-->
 <?php get_footer(); ?>
