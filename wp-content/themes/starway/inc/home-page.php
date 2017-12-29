@@ -55,7 +55,7 @@ $arrContextOptions=array(
                 </div>
             </div>
             <div class="group fade-in">
-                <div class="walking-block" data-step="230">
+                <div class="walking-block" data-step="430">
                     <div class="skew-left accent-block accent-red"></div>
                 </div>
                 <div class="row">
@@ -162,7 +162,7 @@ $arrContextOptions=array(
                 </div>
             </div>
             <div class="group fade-in">
-                <div class="walking-block" data-step="230">
+                <div class="walking-block" data-step="430">
                     <div class="skew-left accent-block accent-black"></div>
                 </div>
                 <div class="row">
@@ -268,7 +268,7 @@ $arrContextOptions=array(
         </div>
         <div class="row flexbox-container">
             <div class="header-content col-md-8 vertical-center">
-                <div class="walking-block" data-step="230">
+                <div class="walking-block" data-step="430">
                     <div class="skew-left accent-block accent-red"></div>
                 </div>
                 <div class="skew-left additional-bg smaller bg-gradient"></div>

@@ -28,7 +28,7 @@ $arrContextOptions=array(
                     </div>
                     <div class="col-md-6">
                         <div class="social-block group">
-                            <div class="walking-block" data-step="230">
+                            <div class="walking-block" data-step="430">
                                 <div class="accent-block accent-red skew-right"></div>
                             </div>
                             <div class="row col-xs-6 col-md-12">

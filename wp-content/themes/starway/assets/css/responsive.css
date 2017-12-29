@@ -119,12 +119,7 @@
   .contacts-block {
     padding:40px 0;
   }
-  .social-block {
-    margin-top:30px;
-  }
-  .social-block .space-top{
-    margin-top:0
-  }
+
   .site-footer .section-title {
     text-align:left;
   }
@@ -142,9 +137,6 @@
   }
 }
 
-@media (max-width:1045px) {
-}
-
 
 @media (max-width:767px) and (min-width: 480px) {
 }
@@ -155,6 +147,17 @@
   }
   #colophon #ft-triangles {
     top:-20px;
+  }
+  .social-block .accent-block {
+    width:90%;
+    top: -15%;
+    bottom: -20%;
+  }
+  .social-block {
+    margin-top:80px;
+  }
+  .social-block .space-top{
+    margin-top:0
   }
 }
 
@@ -176,6 +179,11 @@
 @media (min-width:992px) and (max-width:1199px)  {
 
 }
+
+@media (max-width:1045px) {
+
+}
+
 @media (max-width:1199px) {
 
 }

@@ -333,6 +333,7 @@ function scrollToEelement(select, speed) {
     if (speed === 'undefined' ) {
         speed = 1000
     }
+    console.log(speed)
     jQuery('html, body').animate({
         scrollTop: parseInt(select.offset().top)
     }, speed);
@@ -372,19 +373,18 @@ $(document).ready(function () {
     });
 
     if (window.matchMedia("(min-width:400px)").matches) {
-        // > 400px
+        if ($('#masthead').length) {
+            fullHeight('.full-height')
+        }
     } else {
         // < 400px
     }
 
 
     setTimeout(function(){
-        $('body').removeClass('holding');
         $('body').addClass('lets-party');
-
-
+        scrollToEelement($('body'), 1);
         if ($('body.page').hasClass('lets-party')) {
-            console.log(1);
             if (window.matchMedia("(min-width:768px)").matches) {
                 mouseParallax('.walking-block');
                 parallaxEffect();
@@ -395,7 +395,7 @@ $(document).ready(function () {
             scrollingAnimation('.block-reveal','on-screen','50%');
             fadeEffect();
         }
-    },4600);
+    },4400);
 
 
 
@@ -419,6 +419,9 @@ $(window).on("load", function () {
             }).prependTo(this);
             particlesJS.load('particles-js'+'-'+ num, '/wp-content/themes/starway/assets/js/particlesjs-config.json');
         })
+    }
+    if ($('#masthead').length) {
+        fullHeight('.full-height')
     }
 });
 
