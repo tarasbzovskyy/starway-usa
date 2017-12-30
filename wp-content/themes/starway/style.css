@@ -450,7 +450,7 @@ select.form-control {
 	border: none;
 	border-radius: 0;
 	padding:12px 15px 12px 0;
-	border-bottom: 7px solid  #bf0a20;
+	border-bottom: 4px solid  #bf0a20;
 }
 
 input[type="text"]:focus,
