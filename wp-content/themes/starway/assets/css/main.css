@@ -272,6 +272,12 @@ header {
 .site-header {
   padding:50px 0 10px;
 }
+.site-header.fixed-header {
+  position:fixed;
+  width:100%;
+  z-index:10;
+  top:0;
+}
 .main-menu {
   display:none;
   position:fixed;

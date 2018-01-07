@@ -133,7 +133,7 @@
     display:none;
   }
   #site-navigation {
-    left:30px;
+    left:0!important;
   }
 }
 
@@ -198,4 +198,32 @@
 
 @media (min-width:1450px) {
 
+}
+
+@media only screen and (orientation: landscape) and (max-width:1350px){
+
+  #site-navigation {
+    top:100px;
+  }
+  #site-navigation a {
+    font-size: 25pt;
+    line-height: 100%;
+  }
+  #site-navigation li {
+    margin-bottom:8px;
+  }
+  body {
+    background-color:#000;
+  }
+  #services {
+    background-color:#fff;
+  }
+  .main-header,
+  .main-header .full-height {
+    height:auto!important;
+  }
+  .main-header .full-height {
+    padding:60px 0;
+    display:block;
+  }
 }

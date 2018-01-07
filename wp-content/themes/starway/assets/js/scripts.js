@@ -34,10 +34,14 @@ function menuButton(){
         if (!$(this).hasClass('active')){
             $(this).addClass('active');
             menu.css('left',0).fadeIn(400);
+            window.setTimeout(function(){
+                $('.site-header').delay(600).addClass('fixed-header');
+            },400);
             twp.play();
             twm.play();
 
         } else {
+            $('.site-header').removeClass('fixed-header');
             $(this).removeClass('active');
             menu.fadeOut(400);
             twp.reverse();
@@ -49,8 +53,6 @@ function menuButton(){
 
 
 (function (Stars) {
-
-
 
     function random(min, max) {
         if (max === void 0) { max = 0; }
@@ -333,7 +335,6 @@ function scrollToEelement(select, speed) {
     if (speed === 'undefined' ) {
         speed = 1000
     }
-    console.log(speed)
     jQuery('html, body').animate({
         scrollTop: parseInt(select.offset().top)
     }, speed);
