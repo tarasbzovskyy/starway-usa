@@ -319,6 +319,7 @@ svg {width:100%;}
   transition: all .2s ease-out;
   -webkit-transition: all .2s ease-out;
   -moz-transition: all .2s ease-out;
+  border-radius:0!important;
 }
 .btn.btn-action {
   background-color:#bf0a20;
@@ -882,6 +883,29 @@ select option {
   color: #bfbfbf;
 }
 
+
+/* Place Holder CSS for Focus */
+.form-control:focus::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+.form-control:focus:-moz-placeholder {
+  opacity: 0;
+  -moz-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+.form-control:focus::-moz-placeholder {
+  opacity: 0;
+  -moz-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+.form-control:focus:-ms-input-placeholder {
+  opacity: 0;
+  -ms-transition: opacity 0.35s ease-in-out;
+  transition: opacity 0.35s ease-in-out;
+}
+
 .form-control::-ms-expand {
   font-weight: 600;
   background-color: transparent;
@@ -1010,4 +1034,12 @@ footer#colophon {
 }
 .social-block {
     display:inline-block;
+}
+
+.wpcf7-response-output {
+  color: #f7e700!important;
+  text-align: center!important;
+}
+div.wpcf7-validation-errors {
+  border:none!important;
 }

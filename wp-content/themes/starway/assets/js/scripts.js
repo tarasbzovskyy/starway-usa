@@ -396,7 +396,7 @@ $(document).ready(function () {
             scrollingAnimation('.block-reveal','on-screen','50%');
             fadeEffect();
         }
-    },4400);
+    },4000);
 
 
 
