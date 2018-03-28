@@ -358,13 +358,12 @@ $(document).ready(function () {
 
 
     menuButton();
-    if ($('body').find('.main-header')) {
+    if ($('body').hasClass('home')) {
         var headerCanv = $('<canvas/> ', {
             id:'space'
         }).prependTo('body');
         var stars = new Stars.Canvas(document.getElementById('space'));
     }
-
 
     var swiper = new Swiper('.swiper-container', {
         //effect: 'cube',
@@ -396,7 +395,7 @@ $(document).ready(function () {
             scrollingAnimation('.block-reveal','on-screen','50%');
             fadeEffect();
         }
-    },4000);
+    },3600);
 
 
 

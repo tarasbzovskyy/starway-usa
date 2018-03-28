@@ -21,7 +21,7 @@ $arrContextOptions=array(
                 <div class="skew-right additional-bg bigger bg-gradient"></div>
                 <div class="group block-reveal">
                     <div class="sliding-in">
-                        <h1 class="light-text space-bottom-x2">FEW WORDS ABOUT COMPANY</h1>
+                        <h1 class="light-text space-bottom-x2">You have a dream<br/> we have a way - Star Way!</h1>
                         <p class="light-text">Lorem ipsum dolor sit amet, consectetur a dipiscing elit, sed do eiusmod tempor i
                             ncididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                             quis nostrud exercitation ullamco</p>

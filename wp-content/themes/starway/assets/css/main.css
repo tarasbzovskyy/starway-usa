@@ -278,6 +278,12 @@ header {
   z-index:10;
   top:0;
 }
+.site-header.header-dark {
+  background: transparent;
+}
+.site-header.header-dark .menu-button .menu-stripe {
+  background:#000;
+}
 .main-menu {
   display:none;
   position:fixed;
@@ -708,7 +714,7 @@ svg {width:100%;}
   left: 45%;
   fill-opacity: 0.5;
 }
-.our-clients .particles-js {
+.particles-js {
   position:absolute;
   top:0;
   width:100%;
