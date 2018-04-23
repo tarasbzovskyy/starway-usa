@@ -16,13 +16,13 @@ $arrContextOptions=array(
 <section class="main-header group viewpoint">
     <div class="container ">
         <div class="flexbox-container full-height">
-            <div class="header-content col-md-8 vertical-center">
+            <div class="header-content col-md-10 vertical-center">
                 <div class="skew-left additional-bg smaller bg-gradient"></div>
                 <div class="skew-right additional-bg bigger bg-gradient"></div>
                 <div class="group block-reveal">
                     <div class="sliding-in">
                         <h1 class="light-text space-bottom-x2">You have a dream<br/> we have a way - Star Way!</h1>
-                        <p class="light-text">Lorem ipsum dolor sit amet, consectetur a dipiscing elit, sed do eiusmod tempor i
+                        <p class="light-text col-md-10">Lorem ipsum dolor sit amet, consectetur a dipiscing elit, sed do eiusmod tempor i
                             ncididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
                             quis nostrud exercitation ullamco</p>
                         <a class="btn btn-action space-top-x2 show-contact-form">
@@ -199,7 +199,7 @@ $arrContextOptions=array(
                             <div class="block-skew skew-left block-item skew-plus-45 fade-me-in">
                                 <span>
                                     <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/services/web-design.svg", false, stream_context_create($arrContextOptions)); ?>
-                                    <span>Web Design</span>
+                                    <span>Web Development</span>
                                 </span>
                             </div>
                             <div class="block-skew skew-left block-item skew-plus-45 skew-inside fade-me-in">
@@ -222,12 +222,14 @@ $arrContextOptions=array(
                                     <span>SEO Promotion</span>
                                 </span>
                             </div>
-                            <div class="block-skew skew-left block-item fade-me-in">
-                                <span>
-                                     <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/services/qa.svg", false, stream_context_create($arrContextOptions)); ?>
-                                    <span>Quality Assurance</span>
-                                </span>
-                            </div>
+                            <a href="#">
+                                <div class="block-skew skew-left block-item fade-me-in">
+                                    <span>
+                                         <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/services/branding.svg", false, stream_context_create($arrContextOptions)); ?>
+                                        <span>Branding</span>
+                                    </span>
+                                </div>
+                            </a>
                             <div class="block-skew skew-left block-item skew-inside fade-me-in">
                                 <span>
                                      <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/services/security.svg", false, stream_context_create($arrContextOptions)); ?>

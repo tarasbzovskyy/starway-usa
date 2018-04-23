@@ -227,7 +227,8 @@ function getWindowSizes() {
 function parallaxEffect() {
     var element = $('[data-smooth]');
     element.each(function (i, el) {
-         var getData = $(this).data('smooth');
+         var getData = $(this).data('smooth'),
+             delay = $(this).data('delay');
         $(window).scroll(function () {
             var top = $(this).scrollTop();
             $(el).css({
@@ -380,23 +381,36 @@ $(document).ready(function () {
         // < 400px
     }
 
+    if ($('body').hasClass('home')) {
+        setTimeout(function(){
+            $('body').addClass('lets-party');
+            scrollToEelement($('body'), 1);
+            if ($('body.page').hasClass('lets-party')) {
+                if (window.matchMedia("(min-width:768px)").matches) {
+                    mouseParallax('.walking-block');
+                    parallaxEffect();
+                    $('html').smoothScroll(500);
+                }
 
-    setTimeout(function(){
-        $('body').addClass('lets-party');
-        scrollToEelement($('body'), 1);
-        if ($('body.page').hasClass('lets-party')) {
-            if (window.matchMedia("(min-width:768px)").matches) {
-                mouseParallax('.walking-block');
-                parallaxEffect();
-                $('html').smoothScroll(500);
-
+                scrollingAnimation('.block-reveal','on-screen','50%');
+                fadeEffect();
             }
+        },4000);
+    } else {
+        setTimeout(function(){
+            $('body').addClass('lets-party');
+            if ($('body.page').hasClass('lets-party')) {
+                if (window.matchMedia("(min-width:768px)").matches) {
+                    mouseParallax('.walking-block');
+                    parallaxEffect();
+                    $('html').smoothScroll(500);
+                }
 
-            scrollingAnimation('.block-reveal','on-screen','50%');
-            fadeEffect();
-        }
-    },3600);
-
+                scrollingAnimation('.block-reveal','on-screen','80%');
+                fadeEffect();
+            }
+        },1000);
+    }
 
 
     $('.show-contact-form').on('click',function(){

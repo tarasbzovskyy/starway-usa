@@ -1,15 +1,12 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+html, body, applet, object, iframe, p,
 a, abbr, acronym, address, big, cite, code,
 del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
-dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header,
-menu, nav, output, ruby, section, summary,
+table, caption, tbody, tfoot, thead, canvas, details, embed,
+figure, figcaption,
+menu, nav, output, ruby, summary,
 time, mark, audio, video {
   margin: 0;
   padding: 0;
@@ -24,8 +21,24 @@ body,html {
   height:100%;
 }
 ol, ul {
-  list-style: none; }
+  list-style: none;
 
+}
+ul.list-small {
+  list-style:disc!important;
+  padding-left: 20px;
+  margin:0;
+}
+ul.list-big li{
+  padding:10px 0;
+  font-size:16px;
+  text-transform:uppercase;
+  font-weight:800;
+  margin:0;
+}
+ul.list-small li{
+  padding:6px 0;
+}
 table {
   border-collapse: collapse;
   border-spacing: 0; }
@@ -43,10 +56,13 @@ q, blockquote {
   display:block;
 }
 h1, h2, h3, h4, h5, h6,#site-navigation a,.btn,.section-title,a.skew-more{
+  margin: 0;
   font-family: "AG_Futura", sans-serif;
   line-height:normal;
 }
-
+h2, h3 {
+  text-transform: uppercase;
+}
 h1 {
   font-size:38pt;
   font-weight:800;
@@ -58,18 +74,25 @@ a {
   -webkit-transition: color .2s ease-out;
   -moz-transition: color .2s ease-out;
 }
-a:hover,#site-navigation a:hover {
+a:hover,#site-navigation a:hover,
+.header-dark #site-navigation a:hover {
   color:#bf0a20;
   text-decoration: none;
 }
 #site-navigation li.current_page_item  a{
   color:#bf0a20!important;
 }
+.header-dark #site-navigation a {
+    color:#333;
+}
+.text-dark *,.text-dark {
+    color:#333;
+}
 #site-navigation a {
   color:#fff;
   font-size:45pt;
   text-transform: uppercase;
-  line-height: 58px;
+  line-height: 66px;
   font-weight:800;
 }
 #site-navigation  {
@@ -83,6 +106,7 @@ a:hover,#site-navigation a:hover {
   margin-bottom:15px;
 }
 .light-text a, .light-text {color:#fff!important;}
+.red-text a, .red-text {color:#bf0a20!important;}
 
 header {
   background: rgba(0, 0, 0, 1);
@@ -96,7 +120,7 @@ header {
 }
 
 .container.navbar {
-  position:relative;
+    position:relative;
   z-index:10;
 }
 
@@ -124,7 +148,10 @@ header {
 .menu-button .menu-stripe:first-child {
   margin-left:0;
 }
-
+.header-dark .menu-main-menu-container li a::after,
+.header-dark .menu-main-menu-container li a::before {
+    background-color:#333;
+}
 .menu-main-menu-container li a::after,
 .menu-main-menu-container li a::before {
   content:'';
@@ -206,6 +233,7 @@ header {
 .center-block {
   display:table;
   margin: 0 auto;
+  float:none;
 }
 .pull-left {
   float: left;
@@ -225,11 +253,10 @@ header {
 .float-none {
   float:none;
 }
-/*.full-height {*/
-  /*min-height:100%;*/
-  /*height:100vh;*/
-  /*!*height:100%;*!*/
-/*}*/
+.landing-full-height {
+  min-height:100%;
+  height:100vh;
+}
 
 .space-top {
   margin-top:10px;
@@ -237,11 +264,20 @@ header {
 .space-top-x2 {
   margin-top:20px;
 }
+.space-top-x4{
+  margin-top:40px;
+}
 .space-bottom {
   margin-bottom:10px;
 }
 .space-bottom-x2 {
   margin-bottom:20px;
+}
+.space-bottom-x4 {
+  margin-bottom:40px;
+}
+.space-top-20per {
+  margin-top:20%;
 }
 
 .cf:before,
@@ -267,7 +303,10 @@ header {
 .vertical-center {
   align-self: center;
 }
-
+.flex-vertical-center {
+  display: flex;
+  align-items: center;
+}
 /*Header*/
 .site-header {
   padding:50px 0 10px;
@@ -278,11 +317,14 @@ header {
   z-index:10;
   top:0;
 }
-.site-header.header-dark {
+.header-dark .site-header {
   background: transparent;
 }
-.site-header.header-dark .menu-button .menu-stripe {
+.header-dark  .menu-button .menu-stripe {
   background:#000;
+}
+.header-dark .main-menu {
+    background-color: #fff;
 }
 .main-menu {
   display:none;
@@ -466,6 +508,16 @@ svg {width:100%;}
 
 #services .block-skew {
   box-shadow: 1px 7px 10px rgba(0, 0, 0, 0.26);
+  position: relative;
+  cursor:pointer;
+  top:0;
+  transition: all .2s ease-out;
+  -webkit-transition: all .2s ease-out;
+  -moz-transition: all .2s ease-out;
+}
+#services .block-skew:hover {
+  box-shadow: 1px 13px 40px rgba(0, 0, 0, 0.46);
+  top: -15px;
 }
 .block-skew > *, .unskew-child {
   display:block;
@@ -611,6 +663,12 @@ svg {width:100%;}
   width: 55%;
   border:7px solid #fff;
 }
+.accent-block.oversize {
+  top: -55%;
+  bottom: -50%;
+  left: -8%;
+  width: 140%;
+}
 #services .accent-block {
   top: -10%;
   bottom: 10%;
@@ -622,6 +680,12 @@ svg {width:100%;}
 }
 .accent-black{
   border-color: #000;
+}
+.accent-violet{
+  border-color: rgb(23, 23, 47);
+}
+.accent-opacity5 {
+  opacity:.5;
 }
 .additional-elements {
   position: absolute;
@@ -646,13 +710,14 @@ svg {width:100%;}
   position:absolute;
   bottom:0;
   width: 100%;
-  height:30%;
+  height:100px;
   left:0;
   background-color: transparent;
   background: -moz-linear-gradient(top, rgba(125,185,232,0) 0%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(top, rgba(125,185,232,0) 0%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(to bottom, rgba(125,185,232,0) 0%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+  z-index:1;
 }
 .fade-block.reversed.light {
   background: rgba(255,255,255,1);
@@ -992,6 +1057,9 @@ input:focus, textarea:focus, select:focus, input:active, textarea:active, select
   overflow:hidden;
 
 }
+.block-reveal.dark:after {
+  background: #333;
+}
 .block-reveal:after {
   content: "";
   position: absolute;
@@ -1048,4 +1116,47 @@ footer#colophon {
 }
 div.wpcf7-validation-errors {
   border:none!important;
+}
+
+/*Landing*/
+.landing-header {
+  padding: 10% 0;
+  position:relative;
+  overflow:hidden;
+}
+.landing-description {
+  margin-top:10%;
+}
+.parallax-block {
+  position:absolute;
+}
+.erase {
+  width: 13%;
+  left: 15%;
+  top: 60%;
+ }
+.pen {
+  width: 14%;
+  top:-2%;
+  right:15%;
+}
+.desk-bg {
+  background:url("../img/sw-desk.jpg") no-repeat center top;
+}
+.laptop-bg {
+  background:url("../img/laptop.jpg") no-repeat center center;
+}
+.graph-bg {
+  background: url("../img/sw-graph.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.palm-leafs{
+  background: url("../img/waves-laptop.jpg") no-repeat right bottom;
+  background-size: contain;
+
+  padding:10% 0;
+}
+.ui-ux-section {
+  padding-bottom:10%;
 }

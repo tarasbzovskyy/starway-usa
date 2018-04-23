@@ -225,8 +225,8 @@
     </div>
 </div>
 <?php } ?>
-<div id="page" class="site">
-	<header id="masthead" class="site-header <?php if (!is_front_page()) {echo 'header-dark';} ?>">
+<div id="page" class="site <?php if (!is_front_page()) {echo 'header-dark';} ?>">
+	<header id="masthead" class="site-header">
 		<nav class="container navbar">
 			<div class="navbar-header pull-left">
 				<a href="/">
