@@ -367,10 +367,17 @@ $(document).ready(function () {
     }
 
     var swiper = new Swiper('.swiper-container', {
-        //effect: 'cube',
-        //spaceBetween: 30,
-        direction: 'vertical',
-        //mousewheel: true
+        effect: 'fade',
+        autoplay: {
+            delay: 5000,
+        },
+        fadeEffect: {
+            crossFade: true
+        },
+        navigation: {
+            nextEl: '.swiper-nav-next',
+            prevEl: '.swiper-nav-prev',
+        },
     });
 
     if (window.matchMedia("(min-width:400px)").matches) {

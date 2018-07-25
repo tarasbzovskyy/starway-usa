@@ -809,7 +809,7 @@ svg {width:100%;}
 .clients-slide .client-title,
 .footer-info p{
   text-transform: uppercase;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 18pt;
 
 }
@@ -817,6 +817,26 @@ svg {width:100%;}
   padding-right: 90px;
   padding-top: 100px;
 }
+
+.swiper-nav .swiper-nav-next {
+  margin-left:10px;
+}
+.swiper-nav img {
+  width: 40px;
+  height:40px;
+  display:inline-block;
+  background-color:#bf0a20;
+  padding:8px;
+  cursor:pointer;
+}
+.swiper-nav {
+  position:absolute;
+  right:-60px;
+  width:95px;
+  top:0;
+
+}
+
 .clients-slide .author-position,
 .clients-slide .testimonial {
   font-size:11pt;
@@ -824,7 +844,8 @@ svg {width:100%;}
 
 .clients-slide .company-logo {
   width:80px;
-  height:80px;
+  /*height:80px;*/
+  margin-right:10px;
 }
 .our-clients.our-contacts {
   background-color:#fff;
@@ -849,8 +870,6 @@ svg {width:100%;}
 }
 .clients-slide .client-photo {
   position:absolute;
-  /*right: -20%;*/
-  /*top: -46px;*/
   right: 30px;
   top: 35px;
   width:150px;
@@ -869,7 +888,7 @@ svg {width:100%;}
   position:absolute;
   top: -29px;
   left: -29px;
-  max-width: 140%;
+  max-width: 145%;
   transform: rotate(-46deg);
   -webkit-transform: rotate(-46deg);
   -moz-transform: rotate(-46deg);

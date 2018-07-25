@@ -168,18 +168,22 @@ $arrContextOptions=array(
                 <div class="row">
                     <div class="container-skew">
                         <div class="skew-center">
-                            <div class="block-skew skew-left block-item skew-plus-9 fade-me-in">
-                                <span>
-                                    <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/services/graphic-design.svg", false, stream_context_create($arrContextOptions)); ?>
-                                   <span>Graphic Design</span>
-                                </span>
-                            </div>
-                            <div class="block-skew skew-left block-item skew-plus-9 fade-me-in">
-                               <span>
-                                    <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/services/logo-design.svg", false, stream_context_create($arrContextOptions)); ?>
-                                   <span>Logo Design</span>
-                                </span>
-                            </div>
+                            <a href="/graphic-design">
+                                <div class="block-skew skew-left block-item skew-plus-9 fade-me-in">
+                                    <span>
+                                        <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/services/graphic-design.svg", false, stream_context_create($arrContextOptions)); ?>
+                                       <span>Graphic Design</span>
+                                    </span>
+                                </div>
+                            </a>
+                            <a href="/logo-design">
+                                <div class="block-skew skew-left block-item skew-plus-9 fade-me-in">
+                                   <span>
+                                        <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/services/logo-design.svg", false, stream_context_create($arrContextOptions)); ?>
+                                       <span>Logo Design</span>
+                                    </span>
+                                </div>
+                            </a>
                             <div class="block-skew skew-left block-item skew-space">
                             </div>
                             <div class="block-skew skew-left block-item skew-space">
@@ -190,24 +194,30 @@ $arrContextOptions=array(
                 <div class="row">
                     <div class="container-skew">
                         <div class="skew-center">
-                            <div class="block-skew skew-left block-item skew-plus-45 fade-me-in">
-                              <span>
-                                 <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/services/ui-ux.svg", false, stream_context_create($arrContextOptions)); ?>
-                                 <span>UI/UX Design</span>
-                              </span>
-                            </div>
-                            <div class="block-skew skew-left block-item skew-plus-45 fade-me-in">
-                                <span>
-                                    <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/services/web-design.svg", false, stream_context_create($arrContextOptions)); ?>
-                                    <span>Web Development</span>
-                                </span>
-                            </div>
-                            <div class="block-skew skew-left block-item skew-plus-45 skew-inside fade-me-in">
-                                 <span>
-                                     <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/services/app-dev.svg", false, stream_context_create($arrContextOptions)); ?>
-                                     <span>App Development</span>
-                                </span>
-                            </div>
+                            <a href="/ui-ux-design">
+                                <div class="block-skew skew-left block-item skew-plus-45 fade-me-in">
+                                  <span>
+                                     <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/services/ui-ux.svg", false, stream_context_create($arrContextOptions)); ?>
+                                     <span>UI/UX Design</span>
+                                  </span>
+                                </div>
+                            </a>
+                            <a href="/web-development">
+                                <div class="block-skew skew-left block-item skew-plus-45 fade-me-in">
+                                    <span>
+                                        <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/services/web-design.svg", false, stream_context_create($arrContextOptions)); ?>
+                                        <span>Web Development</span>
+                                    </span>
+                                </div>
+                            </a>
+                            <a href="/app-development">
+                                <div class="block-skew skew-left block-item skew-plus-45 skew-inside fade-me-in">
+                                     <span>
+                                         <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/services/app-dev.svg", false, stream_context_create($arrContextOptions)); ?>
+                                         <span>App Development</span>
+                                    </span>
+                                </div>
+                            </a>
                             <div class="block-skew skew-left block-item skew-space">
                             </div>
                         </div>
@@ -216,13 +226,15 @@ $arrContextOptions=array(
                 <div class="row">
                     <div class="container-skew">
                         <div class="skew-center">
-                            <div class="block-skew skew-left block-item fade-me-in">
-                                <span>
-                                     <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/services/seo.svg", false, stream_context_create($arrContextOptions)); ?>
-                                    <span>SEO Promotion</span>
-                                </span>
-                            </div>
-                            <a href="#">
+                            <a href="/seo-promotion">
+                                <div class="block-skew skew-left block-item fade-me-in">
+                                    <span>
+                                         <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/services/seo.svg", false, stream_context_create($arrContextOptions)); ?>
+                                        <span>SEO Promotion</span>
+                                    </span>
+                                </div>
+                            </a>
+                            <a href="/branding">
                                 <div class="block-skew skew-left block-item fade-me-in">
                                     <span>
                                          <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/services/branding.svg", false, stream_context_create($arrContextOptions)); ?>
@@ -275,25 +287,23 @@ $arrContextOptions=array(
                 </div>
                 <div class="skew-left additional-bg smaller bg-gradient"></div>
                 <div class="skew-right additional-bg bigger bg-gradient"></div>
+                <div class="swiper-nav ">
+                    <img class="swiper-nav-prev" src="<?php echo get_template_directory_uri(); ?>/assets/img/nav_left.svg" />
+                    <img class="swiper-nav-next" src="<?php echo get_template_directory_uri(); ?>/assets/img/nav_right.svg" />
+                </div>
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="clients-slide">
-                                <div class="client-photo"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/clients/victoria.jpg" /></div>
-                                <div class="light-text space-bottom-x2 client-title flexbox-container">
-                                    <div class="company-logo vertical-center">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/clients/law.svg" />
-                                    </div>
-                                    LAW Company
+                                <div class="client-photo"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/clients/helena.jpg" /></div>
+                                <div class="light-text space-bottom-x2 client-title space-top-x2 flexbox-container">
+                                    dreamlifedispatch.com
                                 </div>
-                                <p class="light-text testimonial col-md-10">Lorem ipsum dolor sit amet, consectetur a dipiscing elit, sed do eiusmod tempor i
-                                    ncididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,quis nostrud exercitation ullamco Lorem ipsum dolor sit amet, consectetur a dipiscing elit, sed do eiusmod tempor i
-                                    ncididunt ut labore et dolore magna aliqua.
-                                </p>
+                                <p class="light-text testimonial col-md-10">I am very pleased by the look of the website and its functionality! I also used their marketing service and I am very happy with their work and would recommend Star Way USA if you are looking to increase your market share.</p>
                                 <div class="author pull-right light-text">
-                                    VIKTORIYA BONDARYK-CROSKEY
+                                    Helena Rubina
                                     <div class="author-position text-right">
-                                        MARKETING CMO
+                                        CEO
                                     </div>
                                 </div>
                             </div>
@@ -301,38 +311,65 @@ $arrContextOptions=array(
                         <div class="swiper-slide">
                             <div class="clients-slide">
                                 <div class="client-photo"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/clients/victoria.jpg" /></div>
-                                <div class="light-text space-bottom-x2 client-title flexbox-container">
-                                    <div class="company-logo vertical-center">
+                                <div class="light-text space-bottom-x2 client-title space-top-x2 flexbox-container">
+                                    <div class="flexbox-container company-logo vertical-center">
                                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/clients/law.svg" />
                                     </div>
-                                    LAW Company
+                                    scoblawyers.com
                                 </div>
-                                <p class="light-text testimonial">Lorem ipsum dolor sit amet, consectetur a dipiscing elit, sed do eiusmod tempor i
-                                    ncididunt ut labore et dolore magna aliqua.
-                                </p>
+                                <p class="light-text testimonial col-md-10">Thank you Starway usa for a great job. I definitely recommend this team. Everything is done in time and with really good quality. I’m sure, our cooperation will continue.</p>
                                 <div class="author pull-right light-text space-top-x2">
-                                    BONDARYK-CROSKEY
+                                    Viktoriya Bondaryk-Croskey
                                     <div class="author-position">
-                                        MARKETING CMO
+                                        CO-founder
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide">
                             <div class="clients-slide">
-                                <div class="client-photo"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/clients/victoria.jpg" /></div>
-                                <div class="light-text space-bottom-x2 client-title flexbox-container">
-                                    <div class="company-logo vertical-center">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/clients/law.svg" />
+                                <div class="client-photo"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/clients/rik.jpg" /></div>
+                                <div class="light-text space-bottom-x2 client-title space-top-x2 flexbox-container">
+                                    <div class="flexbox-container company-logo vertical-center">
+                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/clients/starway.svg" />
                                     </div>
-                                    LAW Company
+                                    StarWay USA
                                 </div>
-                                <p class="light-text testimonial">Lona aliqua.
-                                </p>
+                                <p class="light-text testimonial col-md-10">I sincerely thank you, Starway USA, for the excellent service and professionalism. It is very convenient to work with the site: a wonderful design and it’s very easy to manage it. It's nice to deal with professionals.</p>
                                 <div class="author pull-right light-text space-top-x2">
-                                    VIKTORIYA BON
+                                    Rik Huk
                                     <div class="author-position">
-                                        MARKETING CMO
+                                        CEO
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="clients-slide">
+                                <div class="client-photo"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/clients/raphael.jpg" /></div>
+                                <div class="light-text space-bottom-x2 client-title space-top-x2 flexbox-container">
+                                    proserviceagency.com
+                                </div>
+                                <p class="light-text testimonial col-md-10">From the first day, guys understood what we were wanting. Everything, including  communication, speed, and quality was on the higher level and the result exceeded our expectations. We will be glad to work with you again.</p>
+                                <div class="author pull-right light-text space-top-x2">
+                                    Raphael Oganesyan
+                                    <div class="author-position">
+                                        CO-founder
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="clients-slide">
+                                <div class="client-photo"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/clients/tetyana.jpg" /></div>
+                                <div class="light-text space-bottom-x2 client-title space-top-x2 flexbox-container">
+                                    Everbalance Yoga Barre Pilates
+                                </div>
+                                <p class="light-text testimonial col-md-10">I’m very satisfied with the results. During the development of the website, the managers and specialists of the company showed a high level of professionalism and interest in implementing our ideas.</p>
+                                <div class="author pull-right light-text space-top-x2">
+                                    Tetyana Boyeva
+                                    <div class="author-position">
+                                        CEO
                                     </div>
                                 </div>
                             </div>
