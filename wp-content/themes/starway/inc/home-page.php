@@ -22,9 +22,12 @@ $arrContextOptions=array(
                 <div class="group block-reveal">
                     <div class="sliding-in">
                         <h1 class="light-text space-bottom-x2">You have a dream<br/> we have a way - Star Way!</h1>
-                        <p class="light-text col-md-10">Lorem ipsum dolor sit amet, consectetur a dipiscing elit, sed do eiusmod tempor i
-                            ncididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            quis nostrud exercitation ullamco</p>
+                        <p class="light-text col-md-10"> Your business deserves to grow up and to develop. You need more than just a
+                            website. You need result and we know how to make it best. Even If your
+                            project is small or difficult or completely crazy, in any case we realize it at
+                            the highest level. We create a website design that will be perfect for your
+                            company, and that’ll look and feel like your brand.<br/>Our services range from web site design to logo design, visual branding and
+                        marketing.</p>
                         <a class="btn btn-action space-top-x2 show-contact-form">
                             Get Started
                         </a>
@@ -281,7 +284,7 @@ $arrContextOptions=array(
             </div>
         </div>
         <div class="row flexbox-container">
-            <div class="header-content col-md-8 vertical-center">
+            <div class="col-md-8 col-sm-12 col-xs-12">
                 <div class="walking-block" data-step="430">
                     <div class="skew-left accent-block accent-red"></div>
                 </div>

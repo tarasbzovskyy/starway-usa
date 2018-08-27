@@ -11,10 +11,8 @@ get_header(); ?>
 
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-			<section class="error-404 not-found space-top-20per">
-				<header class="page-header">
+			<section class="error-404 not-found space-top-20per space-bottom-10per text-center">
 					<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'starway' ); ?></h1>
-				</header><!-- .page-header -->
 			</section><!-- .error-404 -->
 		</main><!-- #main -->
 	</div><!-- #primary -->

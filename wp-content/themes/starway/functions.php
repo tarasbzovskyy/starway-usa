@@ -144,6 +144,10 @@ function starway_scripts() {
 	wp_enqueue_script('particles_js', $JS_folder . 'particles.min.js',array(), '1.0.0');
 	wp_enqueue_script('scripts_js', $JS_folder . 'scripts.js',array(), '1.0.0');
 
+	if (is_page('portfolio')) {
+        wp_enqueue_script('triangles', $JS_folder . 'triangles.js',array(), '1.0.0');
+    }
+
 
 	wp_enqueue_script( 'starway-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 

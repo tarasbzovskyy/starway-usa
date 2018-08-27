@@ -2,6 +2,7 @@ var $ = jQuery,
     twp = new TimelineLite({paused:true}),
     twm = new TimelineLite({paused:true}),
     tw = new TimelineLite(),
+    tweenmax = new TimelineLite(),
     Stars;
 
 function menuButton(){
@@ -24,11 +25,12 @@ function menuButton(){
 
     $('#primary-menu').on('click','li',function(){
         menuButton.removeClass('active');
-        tw.to(menu, .3, {left:'102%', delay:.3, onComplete:function(){
+        tweenmax.to(menu, .3, {left:'102%', delay:.3, onComplete:function(){
             tw.to(menu, 0, {opacity:0,css:{display:'none'}});
             twp.reverse();
             twm.reverse();
-        }})
+        }});
+        $('.site-header').removeClass('fixed-header');
     });
     menuButton.on('click', function(){
         if (!$(this).hasClass('active')){
@@ -322,7 +324,7 @@ function fadeEffect() {
             $(this.element).each(function(){
                 $(this).addClass('start');
                 if ($(this).hasClass('start')) {
-                    tw.staggerTo($(this).find('.block-skew'), .3, {opacity: 1, x:0}, .1);
+                    tw.staggerTo($(this).find(target), .3, {opacity: 1, x:0}, .1);
                 }
             });
         }, {
@@ -399,7 +401,7 @@ $(document).ready(function () {
                     $('html').smoothScroll(500);
                 }
 
-                scrollingAnimation('.block-reveal','on-screen','50%');
+                scrollingAnimation('.block-reveal','on-screen','40%');
                 fadeEffect();
             }
         },4000);
