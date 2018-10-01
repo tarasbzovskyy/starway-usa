@@ -27,7 +27,7 @@ $arrContextOptions=array(
                 </div>
                 <div class="fade-block light"></div>
             </div>
-            <div class="col-md-6 fade-in"><div class="portf_header_logo fade-me-in shadow-block center-block"><img src="/wp-content/themes/starway/assets/img/portfolio/logo_builddream.jpg" /></div></div>
+            <div class="col-md-6 fade-in"><div class="portf_header_logo fade-me-in shadow-block center-block"><img alt="Build Dream Logo" src="/wp-content/themes/starway/assets/img/portfolio/logo_builddream.jpg" /></div></div>
         </div>
     </section>
     <div class="arseal builddream port-info-block">
@@ -70,10 +70,10 @@ $arrContextOptions=array(
                         symbolizes the "smoothness of the approach" to the wishes of the client and firm professional decisions from other parties.</div>
                 </div>
             </div>
-            <div class="col-md-5 fade-in"><img src="/wp-content/themes/starway/assets/img/portfolio/builddream-logo-making_1.png" class="image fade-me-in" /></div>
+            <div class="col-md-5 fade-in"><img alt="Build Dream Logo Development" src="/wp-content/themes/starway/assets/img/portfolio/builddream-logo-making_1.png" class="image fade-me-in" /></div>
         </div>
         <div class="container flex-vertical-center">
-            <div class="col-md-5 fade-in"><img src="/wp-content/themes/starway/assets/img/portfolio/builddream-logo-making_3.png" class="image fade-me-in" /></div>
+            <div class="col-md-5 fade-in"><img alt="Build Dream Logo Development 2" src="/wp-content/themes/starway/assets/img/portfolio/builddream-logo-making_3.png" class="image fade-me-in" /></div>
             <div class="group col-md-6">
                 <div class="block-reveal dark group">
                     <div class="sliding-in">The whole graphic sign consists of four mutually perpendicular elements, described above,
@@ -90,7 +90,7 @@ $arrContextOptions=array(
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 fade-in"><img src="/wp-content/themes/starway/assets/img/portfolio/builddream_logo_making_2.png" class="image fade-me-in" /></div>
+            <div class="col-md-6 fade-in"><img alt="Build Dream Logo Development 3" src="/wp-content/themes/starway/assets/img/portfolio/builddream_logo_making_2.png" class="image fade-me-in" /></div>
         </div>
 
     </section>
@@ -112,7 +112,7 @@ $arrContextOptions=array(
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-7 fade-in center-block"><img src="/wp-content/themes/starway/assets/img/portfolio/builddream-font_1.png" class="image fade-me-in" /></div>
+                <div class="col-md-7 fade-in center-block"><img alt="Build Dream Font main" src="/wp-content/themes/starway/assets/img/portfolio/builddream-font_1.png" class="image fade-me-in" /></div>
             </div>
         </div>
         <div class="container space-top-10per">
@@ -124,7 +124,7 @@ $arrContextOptions=array(
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-7 center-block fade-in"><img src="/wp-content/themes/starway/assets/img/portfolio/builddream-font_2.png" class="image fade-me-in" /></div>
+                <div class="col-md-7 center-block fade-in"><img alt="Build Dream Font Additional" src="/wp-content/themes/starway/assets/img/portfolio/builddream-font_2.png" class="image fade-me-in" /></div>
             </div>
         </div>
     </section>

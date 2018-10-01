@@ -24,7 +24,7 @@ $arrContextOptions=array(
             </div>
             <div class="fade-block light"></div>
         </div>
-        <div class="col-md-6 fade-in"><div class="portf_header_logo fade-me-in shadow-block center-block"><img src="/wp-content/themes/starway/assets/img/portfolio/logo_arseal.jpg" /></div></div>
+        <div class="col-md-6 fade-in"><div class="portf_header_logo fade-me-in shadow-block center-block"><img alt="Arseal Logo" src="/wp-content/themes/starway/assets/img/portfolio/logo_arseal.jpg" /></div></div>
     </div>
 
     <div class="arseal port-info-block">
@@ -46,7 +46,7 @@ $arrContextOptions=array(
         </div>
     </div>
 
-    <section class="cover-block logo-anatomy">
+    <section class="logo-anatomy">
         <div class="container light-text">
             <div class="row space-top-x2">
                 <div class="section-title dark-text group" title="Logo Anatomy">
@@ -62,9 +62,9 @@ $arrContextOptions=array(
                     <div class="sliding-in">The graphic sign is made with a golden ratio of various diameters in the form of the letter "A" - the first letter of the brand name using gradients of brand colors.</div>
                 </div>
             </div>
-            <div class="col-md-5 fade-in"><img src="/wp-content/themes/starway/assets/img/portfolio/arseal_logo_making1.png" class="image shadow-block fade-me-in" /></div>
+            <div class="col-md-5 fade-in"><img alt="Arseal Logo Development 1" src="/wp-content/themes/starway/assets/img/portfolio/arseal_logo_making1.png" class="image shadow-block fade-me-in" /></div>
         </div>   <div class="container flex-vertical-center">
-            <div class="col-md-4 fade-in"><img src="/wp-content/themes/starway/assets/img/portfolio/arseal_logo_making2.png" class="image shadow-block fade-me-in" /></div>
+            <div class="col-md-4 fade-in"><img alt="Arseal Logo Development 2" src="/wp-content/themes/starway/assets/img/portfolio/arseal_logo_making2.png" class="image shadow-block fade-me-in" /></div>
             <div class="group col-md-6 ">
                 <div class="walking-block" data-step="430"></div>
                 <div class="block-reveal dark group">
@@ -92,10 +92,10 @@ $arrContextOptions=array(
                     <div class="sliding-in"><h3 class="space-bottom">The main font of Arseal is based on "November Mornings"</h3>This font is the basis for creating a brand inscription. For a greater design effect, additional worn-out letters were used, which are used in the name of the company.</div>
                 </div>
             </div>
-            <div class="col-md-5 fade-in"><img src="/wp-content/themes/starway/assets/img/portfolio/arseal-main-font.png" class="image shadow-block fade-me-in" /></div>
+            <div class="col-md-5 fade-in"><img alt="Arseal Font Main" src="/wp-content/themes/starway/assets/img/portfolio/arseal-main-font.png" class="image shadow-block fade-me-in" /></div>
         </div>
         <div class="container flex-vertical-center">
-            <div class="col-md-5 fade-in"><img src="/wp-content/themes/starway/assets/img/portfolio/arseal-additional-font.png" class="image shadow-block fade-me-in" /></div>
+            <div class="col-md-5 fade-in"><img alt="Arseal Font Additional" src="/wp-content/themes/starway/assets/img/portfolio/arseal-additional-font.png" class="image shadow-block fade-me-in" /></div>
             <div class="group col-md-6 ">
                 <div class="walking-block" data-step="430"></div>
                 <div class="block-reveal light group">
@@ -151,10 +151,10 @@ $arrContextOptions=array(
             </div>
             <div class="col-md-4 fade-in">
                 <div class="row">
-                    <img src="/wp-content/themes/starway/assets/img/portfolio/arseal-bcard1.png" class="image shadow-block fade-me-in" />
+                    <img alt="Arseal Business card" src="/wp-content/themes/starway/assets/img/portfolio/arseal-bcard1.png" class="image shadow-block fade-me-in" />
                 </div>
                 <div class="row space-top-x2">
-                    <img src="/wp-content/themes/starway/assets/img/portfolio/arseal-bcard2.png" class="image shadow-block fade-me-in" />
+                    <img alt="Arseal Business card 2" src="/wp-content/themes/starway/assets/img/portfolio/arseal-bcard2.png" class="image shadow-block fade-me-in" />
                 </div>
             </div>
         </div>

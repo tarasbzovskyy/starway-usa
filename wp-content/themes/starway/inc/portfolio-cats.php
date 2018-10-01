@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Portfolio test
+Template Name: Portfolio Cats
 */
 
 $arrContextOptions=array(
@@ -25,7 +25,7 @@ $arrContextOptions=array(
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 fade-in"><div class="portf_header_logo fade-me-in center-block"><img class="shadow-block" src="/wp-content/themes/starway/assets/img/portfolio/cats/cats-preview.jpg" /></div></div>
+            <div class="col-md-6 fade-in"><div class="portf_header_logo fade-me-in center-block"><img alt="Kitties Preview Picture" class="shadow-block" src="/wp-content/themes/starway/assets/img/portfolio/cats/cats-preview.jpg" /></div></div>
         </div>
     </section>
 
@@ -42,12 +42,12 @@ $arrContextOptions=array(
             <div class="group col-md-12 center-block fade-in">
                 <div class="swiper-container multiple-slides cats-slider">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img class="image fade-me-in" src="/wp-content/themes/starway/assets/img/portfolio/cats/1s.jpg"/></div>
-                        <div class="swiper-slide"><img class="image fade-me-in" src="/wp-content/themes/starway/assets/img/portfolio/cats/2s.jpg"/></div>
-                        <div class="swiper-slide"><img class="image fade-me-in" src="/wp-content/themes/starway/assets/img/portfolio/cats/3s.jpg"/></div>
-                        <div class="swiper-slide"><img class="image fade-me-in" src="/wp-content/themes/starway/assets/img/portfolio/cats/4s.jpg"/></div>
-                        <div class="swiper-slide"><img class="image fade-me-in" src="/wp-content/themes/starway/assets/img/portfolio/cats/5s.jpg"/></div>
-                        <div class="swiper-slide"><img class="image fade-me-in" src="/wp-content/themes/starway/assets/img/portfolio/cats/6s.jpg"/></div>
+                        <div class="swiper-slide"><img alt="Kitty 1" class="image fade-me-in" src="/wp-content/themes/starway/assets/img/portfolio/cats/1s.jpg"/></div>
+                        <div class="swiper-slide"><img alt="Kitty 2" class="image fade-me-in" src="/wp-content/themes/starway/assets/img/portfolio/cats/2s.jpg"/></div>
+                        <div class="swiper-slide"><img alt="Kitty 3" class="image fade-me-in" src="/wp-content/themes/starway/assets/img/portfolio/cats/3s.jpg"/></div>
+                        <div class="swiper-slide"><img alt="Kitty 4" class="image fade-me-in" src="/wp-content/themes/starway/assets/img/portfolio/cats/4s.jpg"/></div>
+                        <div class="swiper-slide"><img alt="Kitty 5" class="image fade-me-in" src="/wp-content/themes/starway/assets/img/portfolio/cats/5s.jpg"/></div>
+                        <div class="swiper-slide"><img alt="Kitty 6" class="image fade-me-in" src="/wp-content/themes/starway/assets/img/portfolio/cats/6s.jpg"/></div>
                     </div>
                     <div class="swiper-pagination"></div>
                 </div>
@@ -65,7 +65,7 @@ $arrContextOptions=array(
         </div>
         <div class="container flex-vertical-center space-top-10per">
             <div class="col-md-10 center-block fade-in">
-                <img src="/wp-content/themes/starway/assets/img/portfolio/cats/cat_mockup.jpg" class="image fade-me-in" />
+                <img alt="Kitty Price tag mockup" src="/wp-content/themes/starway/assets/img/portfolio/cats/cat_mockup.jpg" class="image fade-me-in" />
             </div>
         </div>
     </section>

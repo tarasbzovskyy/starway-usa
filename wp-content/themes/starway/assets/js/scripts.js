@@ -367,20 +367,34 @@ $(document).ready(function () {
         }).prependTo('body');
         var stars = new Stars.Canvas(document.getElementById('space'));
     }
+    if ($('#clients').length) {
+        var swiper = new Swiper('.swiper-container', {
+            effect: 'fade',
+            autoplay: {
+                delay: 5000,
+            },
+            fadeEffect: {
+                crossFade: true
+            },
+            navigation: {
+                nextEl: '.swiper-nav-next',
+                prevEl: '.swiper-nav-prev',
+            },
+        });
+    }
 
-    var swiper = new Swiper('.swiper-container', {
-        effect: 'fade',
-        autoplay: {
-            delay: 5000,
-        },
-        fadeEffect: {
-            crossFade: true
-        },
-        navigation: {
-            nextEl: '.swiper-nav-next',
-            prevEl: '.swiper-nav-prev',
-        },
-    });
+    if ($('.cats-slider').length) {
+        var swiper2 = new Swiper('.cats-slider', {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    }
+
+
 
     if (window.matchMedia("(min-width:400px)").matches) {
         if ($('#masthead').length) {

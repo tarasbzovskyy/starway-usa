@@ -551,11 +551,15 @@ svg {width:100%;}
 #services .block-skew {
   height:156px;
 }
+#portfolio .block-skew {
+  overflow:hidden;
+}
 #services .block-skew.skew-space,
 #portfolio .block-skew.skew-space {
   height: 0;
 }
 
+#portfolio .block-skew,
 #services .block-skew {
   box-shadow: 1px 7px 10px rgba(0, 0, 0, 0.26);
   position: relative;
@@ -565,6 +569,7 @@ svg {width:100%;}
   -webkit-transition: all .2s ease-out;
   -moz-transition: all .2s ease-out;
 }
+#portfolio .block-skew:hover,
 #services .block-skew:hover {
   box-shadow: 1px 13px 40px rgba(0, 0, 0, 0.46);
   top: -15px;
@@ -590,6 +595,16 @@ svg {width:100%;}
   right: -85%;
   margin: 0 auto;
   width: 65%;
+}
+
+.kitties_hp {
+  background:url('../img/portfolio/cats/cats-preview.jpg') rgba(225, 226, 232, 0.18) center center repeat;
+  width: 180%!important;
+  height: 100%;
+  background-size: 100% 200%;
+}
+.job_arseal {
+  background-color: #3a92c8;
 }
 #services {
   padding-bottom:10%;
@@ -1213,6 +1228,7 @@ div.wpcf7-validation-errors {
 }
 .portfolio-page {
   position:relative;
+  overflow-x:hidden;
 }
 .landing-description {
   margin-top:10%;
@@ -1273,11 +1289,24 @@ div.wpcf7-validation-errors {
 .massive .portf_header_logo {
   border:10px solid #113b65;
 }
+.myatelier .portf_header_logo {
+  border:10px solid #c79e54;
+}
+.cats-price-tag .portf_header_logo img {
+  border: 10px solid #241a60;
+}
 .arseal.port-info-block, .arseal.colors-typography {
   background-color:#3d94c8;
 }
-.massive .port-info-block{
+.massive .port-info-block {
   background-color:#113b65;
+}
+.zechat .port-info-block {
+  background-color:#8585F0;
+}
+
+.myatelier .port-info-block {
+  background-color: #1b5460;
 }
 .massive .colors-typography {
   background-color:#68a227;
@@ -1291,9 +1320,28 @@ div.wpcf7-validation-errors {
 .massive-color {
   color: #68a227 !important;
 }
+.myatelier-color {
+  color:#c79e54;
+}
+.myatelier-color2 {
+  color:#1b5460;
+}
+.zechat-color {
+  color:#8585F0;
+}
+.zechat-color2 {
+  color:#32325D;
+}
+.cats-color {
+  color:#241a60;
+}
 .massive .port-header-bg {
   background:url('../img/portfolio/massive_header_bg.png') right center no-repeat;
   background-size: contain;
+}
+.myatelier .port-header-bg {
+  background: url('../img/portfolio/kubita-model-bg.jpg') #fff right top no-repeat;
+  background-size:contain;
 }
 .port-info-block {
   padding-bottom:7%;
@@ -1321,6 +1369,9 @@ div.wpcf7-validation-errors {
 
 .builddream-light {
   background:#fbfbfb;
+}
+.zechat-light {
+  background: #F7F8FA;
 }
 .port-color {
   height:90px;
@@ -1356,6 +1407,25 @@ div.wpcf7-validation-errors {
 .massive .color4 {
   background-color:#68A227;
 }
+.zechat .port-main-color {
+  margin:0 10px;
+}
+.zechat .color1 {
+  background-color:#32325D;
+}
+.zechat .color2 {
+  background-color:#8585F0;
+  border: 3px solid #fff;
+}
+.zechat .color3 {
+  background-color:#F7F8FA;
+}
+.zechat .color4 {
+  background-color:#31BBDC;
+}
+.zechat .color5 {
+  background-color:#C3E678;
+}
 .builddream .port-main-color {
   background-color:#315201;
 }
@@ -1381,6 +1451,11 @@ background:#9bc7e2;
 .port-color.arseal6 {
 background:#cae2ef;
 }
+.zechat .color-code {
+  height:auto;
+  width:100%;
+  font-weight:bold;
+}
 .color-code {
   font-size:18px;
   height:100px;
@@ -1396,4 +1471,17 @@ background:#cae2ef;
   background:url('../img/portfolio/builddream-final_bg.jpg') center center no-repeat;
   background-size:cover;
 
+}
+
+.swiper-container.cats-slider {
+  height:auto;
+  width:100%;
+}
+.swiper-container.cats-slider .swiper-pagination {
+  margin-top:20px;
+  position: static;
+  text-align:left;
+}
+.cats-price-tag .logo-anatomy{
+  background: url('../img/portfolio/cats/cats-pattern.png') rgba(225, 226, 232, 0.18) center center repeat;
 }

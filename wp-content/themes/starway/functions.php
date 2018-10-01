@@ -132,6 +132,7 @@ function starway_scripts() {
 	wp_enqueue_style('swiper_css', $CSS_folder . 'swiper.min.css',array(), '1.0.0');
     wp_enqueue_style('main_css', $CSS_folder . 'main.css',array(), '1.0.0');
     wp_enqueue_style('responsive_css', $CSS_folder . 'responsive.css',array(), '1.0.0');
+    wp_enqueue_style('ekkolightbox_css', $CSS_folder . 'ekko-lightbox.min.css',array(), '1.0.0');
 
     // CONNECT JS
 	wp_enqueue_script('jquery', $JS_folder . 'jquery.min.js',array(), '1.0.0');
@@ -143,6 +144,7 @@ function starway_scripts() {
 	wp_enqueue_script('smoothscroll_js', $JS_folder . 'jquery.smoothscroll.js',array(), '1.0.0');
 	wp_enqueue_script('particles_js', $JS_folder . 'particles.min.js',array(), '1.0.0');
 	wp_enqueue_script('scripts_js', $JS_folder . 'scripts.js',array(), '1.0.0');
+	wp_enqueue_script('ekkolightbox_js', $JS_folder . 'ekko-lightbox.min.js',array(), '1.0.0');
 
 	if (is_page('portfolio')) {
         wp_enqueue_script('triangles', $JS_folder . 'triangles.js',array(), '1.0.0');

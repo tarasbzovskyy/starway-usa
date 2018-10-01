@@ -68,11 +68,13 @@ $arrContextOptions=array(
                             </div>
                             <div class="block-skew skew-left block-item skew-space">
                             </div>
-                            <div class="block-skew skew-left block-item skew-first skew-plus-9 fade-me-in">
-                            <span>
-                                <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/portfolio/1.svg", false, stream_context_create($arrContextOptions)); ?>
-                            </span>
-                            </div>
+                            <a href="/portfolio/my-atelier">
+                                <div class="block-skew skew-left block-item skew-first skew-plus-9 fade-me-in">
+                                    <span>
+                                        <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/portfolio/1.svg", false, stream_context_create($arrContextOptions)); ?>
+                                    </span>
+                                </div>
+                            </a>
                             <div class="block-skew skew-left block-item skew-space">
                             </div>
                         </div>
@@ -83,16 +85,20 @@ $arrContextOptions=array(
                         <div class="skew-center">
                             <div class="block-skew skew-left block-item skew-space">
                             </div>
-                            <div class="block-skew skew-left block-item skew-plus-45 fade-me-in">
-                              <span>
-                                 <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/portfolio/2.svg", false, stream_context_create($arrContextOptions)); ?>
-                              </span>
-                            </div>
-                            <div class="block-skew skew-left block-item skew-plus-45 fade-me-in">
-                            <span>
-                                 <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/portfolio/3.svg", false, stream_context_create($arrContextOptions)); ?>
-                            </span>
-                            </div>
+                            <a href="/portfolio/build-dream">
+                                <div class="block-skew skew-left block-item skew-plus-45 fade-me-in">
+                                  <span>
+                                     <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/portfolio/2.svg", false, stream_context_create($arrContextOptions)); ?>
+                                  </span>
+                                </div>
+                            </a>
+                            <a href="/portfolio/massive">
+                                <div class="block-skew skew-left block-item skew-plus-45 fade-me-in">
+                                    <span>
+                                         <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/portfolio/3.svg", false, stream_context_create($arrContextOptions)); ?>
+                                    </span>
+                                </div>
+                            </a>
                             <div class="block-skew skew-left block-item skew-space">
                             </div>
                         </div>
@@ -101,26 +107,32 @@ $arrContextOptions=array(
                 <div class="row">
                     <div class="container-skew">
                         <div class="skew-center">
-                            <div class="block-skew skew-left block-item fade-me-in">
-                            <span>
-                                 <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/portfolio/4.svg", false, stream_context_create($arrContextOptions)); ?>
-                            </span>
-                            </div>
-                            <div class="block-skew skew-left block-item fade-me-in">
-                            <span>
-                                 <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/portfolio/5.svg", false, stream_context_create($arrContextOptions)); ?>
-                            </span>
-                            </div>
+                            <a href="/portfolio/ze-chat">
+                                <div class="block-skew skew-left block-item fade-me-in">
+                                    <span>
+                                         <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/portfolio/4.svg", false, stream_context_create($arrContextOptions)); ?>
+                                    </span>
+                                </div>
+                            </a>
+                            <a href="/portfolio/arseal">
+                                <div class="block-skew skew-left block-item fade-me-in job_arseal">
+                                    <span>
+                                        <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/portfolio/5.svg", false, stream_context_create($arrContextOptions)); ?>
+                                    </span>
+                                </div>
+                            </a>
                             <div class="block-skew skew-left block-item skew-inside fade-me-in">
-                            <span>
-                                 <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/portfolio/6.svg", false, stream_context_create($arrContextOptions)); ?>
-                            </span>
+                                <span>
+                                     <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/portfolio/6.svg", false, stream_context_create($arrContextOptions)); ?>
+                                </span>
                             </div>
-                            <div class="block-skew skew-left block-item skew-inside fade-me-in">
-                            <span>
-                                <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/portfolio/7.svg", false, stream_context_create($arrContextOptions)); ?>
-                            </span>
-                            </div>
+                            <a href="/portfolio/kitties">
+                                <div class="block-skew skew-left block-item skew-inside fade-me-in">
+                                    <span class="portfolio-item kitties_hp">
+
+                                    </span>
+                                </div>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -137,7 +149,7 @@ $arrContextOptions=array(
                             </span>
                             </div>
                             <div class="block-skew skew-left block-item show-more skew-minus-45 fade-me-in">
-                                <a href="#" class="skew-more">
+                                <a href="/portfolio" class="skew-more">
                                     <span class="unskew-child">More</span>
                                 </a>
                             </div>
@@ -291,14 +303,14 @@ $arrContextOptions=array(
                 <div class="skew-left additional-bg smaller bg-gradient"></div>
                 <div class="skew-right additional-bg bigger bg-gradient"></div>
                 <div class="swiper-nav ">
-                    <img class="swiper-nav-prev" src="<?php echo get_template_directory_uri(); ?>/assets/img/nav_left.svg" />
-                    <img class="swiper-nav-next" src="<?php echo get_template_directory_uri(); ?>/assets/img/nav_right.svg" />
+                    <img alt="navigation arrow left" class="swiper-nav-prev" src="<?php echo get_template_directory_uri(); ?>/assets/img/nav_left.svg" />
+                    <img alt="navigation arrow right" class="swiper-nav-next" src="<?php echo get_template_directory_uri(); ?>/assets/img/nav_right.svg" />
                 </div>
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="clients-slide">
-                                <div class="client-photo"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/clients/helena.jpg" /></div>
+                                <div class="client-photo"><img alt="Helena" src="<?php echo get_template_directory_uri(); ?>/assets/img/clients/helena.jpg" /></div>
                                 <div class="light-text space-bottom-x2 client-title space-top-x2 flexbox-container">
                                     dreamlifedispatch.com
                                 </div>
@@ -313,10 +325,10 @@ $arrContextOptions=array(
                         </div>
                         <div class="swiper-slide">
                             <div class="clients-slide">
-                                <div class="client-photo"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/clients/victoria.jpg" /></div>
+                                <div class="client-photo"><img alt="Victoria" src="<?php echo get_template_directory_uri(); ?>/assets/img/clients/victoria.jpg" /></div>
                                 <div class="light-text space-bottom-x2 client-title space-top-x2 flexbox-container">
                                     <div class="flexbox-container company-logo vertical-center">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/clients/law.svg" />
+                                        <img alt="Law logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/clients/law.svg" />
                                     </div>
                                     scoblawyers.com
                                 </div>
@@ -331,10 +343,10 @@ $arrContextOptions=array(
                         </div>
                         <div class="swiper-slide">
                             <div class="clients-slide">
-                                <div class="client-photo"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/clients/rik.jpg" /></div>
+                                <div class="client-photo"><img alt="Rik" src="<?php echo get_template_directory_uri(); ?>/assets/img/clients/rik.jpg" /></div>
                                 <div class="light-text space-bottom-x2 client-title space-top-x2 flexbox-container">
                                     <div class="flexbox-container company-logo vertical-center">
-                                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/clients/starway.svg" />
+                                        <img alt="Starway" src="<?php echo get_template_directory_uri(); ?>/assets/img/clients/starway.svg" />
                                     </div>
                                     StarWay USA
                                 </div>
@@ -349,7 +361,7 @@ $arrContextOptions=array(
                         </div>
                         <div class="swiper-slide">
                             <div class="clients-slide">
-                                <div class="client-photo"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/clients/raphael.jpg" /></div>
+                                <div class="client-photo"><img alt="Raphael" src="<?php echo get_template_directory_uri(); ?>/assets/img/clients/raphael.jpg" /></div>
                                 <div class="light-text space-bottom-x2 client-title space-top-x2 flexbox-container">
                                     proserviceagency.com
                                 </div>
@@ -364,7 +376,7 @@ $arrContextOptions=array(
                         </div>
                         <div class="swiper-slide">
                             <div class="clients-slide">
-                                <div class="client-photo"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/clients/tetyana.jpg" /></div>
+                                <div class="client-photo"><img alt="Tetyana" src="<?php echo get_template_directory_uri(); ?>/assets/img/clients/tetyana.jpg" /></div>
                                 <div class="light-text space-bottom-x2 client-title space-top-x2 flexbox-container">
                                     Everbalance Yoga Barre Pilates
                                 </div>
