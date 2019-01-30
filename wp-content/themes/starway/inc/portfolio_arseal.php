@@ -19,7 +19,7 @@ $arrContextOptions=array(
             <h1 class="entry-title text-left space-bottom-x2">Arseal</h1>
             <div class="block-reveal dark">
                 <div class="sliding-in">
-                    <p>StarWay offers a full range of web development services to exceed the demands of any size project. We have been building custom websites for a long time and can offer you all the related services you will need. Allow us to design, promote and host your website and watch your leads and sale increase.</p>
+                    <p>StarWay offers a full range of web development services to exceed the demands of any size project. We have been building customer’s websites for a long time and can offer you all the related services you will need. Allow us to design, promote and host your website and watch your leads and sale increase.</p>
                 </div>
             </div>
             <div class="fade-block light"></div>
@@ -38,7 +38,7 @@ $arrContextOptions=array(
                 <div class="col-md-8 center-block space-top-15per light-text">
                     <div class="block-reveal light group">
                         <div class="sliding-in">
-                            StarWay offers a full range of web development services to exceed the demands of any size project. We have been building custom websites for a long time and can offer you all the related services you will need. Allow us to design, promote and host your website and watch your leads and sale increase.
+                            StarWay offers a full range of web development services to exceed the demands of any size project. We have been building customer’s websites for a long time and can offer you all the related services you will need. Allow us to design, promote and host your website and watch your leads and sale increase.
                         </div>
                     </div>
                 </div>
@@ -158,6 +158,28 @@ $arrContextOptions=array(
                 </div>
             </div>
         </div>
+    </section>
+    <section id="contacts" class="contacts-block group viewpoint">
+        <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/contact-stripe.svg", false, stream_context_create($arrContextOptions)); ?>
+        <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/contact-triangle.svg", false, stream_context_create($arrContextOptions)); ?>
+
+        <div class="container">
+            <div class="row space-top-x2 space-bottom-x2">
+                <div class="section-title light-text text-center">
+                    Contact Us
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="flexbox-container" >
+                    <div class="col-md-8 vertical-center light-text">
+                        <?php echo do_shortcode('[contact-form-7 id="10" title="Contacts"]')?>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </section>
 </div>
 

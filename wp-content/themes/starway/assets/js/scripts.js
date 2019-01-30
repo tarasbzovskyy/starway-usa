@@ -23,7 +23,7 @@ function menuButton(){
 
     twp.staggerTo(menuElements, .2, {opacity: 1, x:15, delay: .6 }, .2);
 
-    $('#primary-menu').on('click','li',function(){
+    $('#site-navigation').on('click','li',function(){
         menuButton.removeClass('active');
         tweenmax.to(menu, .3, {left:'102%', delay:.3, onComplete:function(){
             tw.to(menu, 0, {opacity:0,css:{display:'none'}});

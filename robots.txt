@@ -1,3 +1,26 @@
-# Allow crawling of all content
 User-agent: *
-Disallow:
+Disallow: /cgi-bin 
+Disallow: /? 
+Disallow: /wp- 
+Disallow: *?s= 
+Disallow: *&s= 
+Disallow: /search 
+Disallow: /author/* 
+Disallow: *?attachment_id= 
+Disallow: */trackback
+Disallow: */feed 
+Disallow: */embed 
+Disallow: */page/ 
+Disallow: /tag/*
+Disallow: /category/*
+Disallow: /portfolio
+Allow: */uploads 
+Allow: /*/*.js 
+Allow: /*/*.css 
+Allow: /wp-*.png 
+Allow: /wp-*.jpg 
+Allow: /wp-*.jpeg 
+Allow: /wp-*.gif 
+
+Host: https://starwayusa.com
+Sitemap: https://starwayusa.com/sitemap.xml

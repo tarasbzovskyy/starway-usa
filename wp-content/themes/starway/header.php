@@ -14,6 +14,7 @@
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="TohO_kgiKnTxpH2wqQHpPUhXAeoeQfyMvakZokq074I" />
 	<link rel="profile" href="http://gmpg.org/xfn/11">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
 	<?php wp_head(); ?>
@@ -230,7 +231,7 @@
 		<nav class="container navbar">
 			<div class="navbar-header pull-left">
 				<a href="/">
-					<img class="logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/starway-logo<?php if (!is_front_page()) {echo '-dark';} ?>.svg">
+					<img class="logo" alt="StarWay USA Logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/starway-logo<?php if (!is_front_page()) {echo '-dark';} ?>.svg">
 				</a>
 			</div>
 			<div class="nav menu-button navbar-nav pull-right">
@@ -248,10 +249,21 @@
         <nav id="site-navigation" class="main-navigation">
 
             <?php
-            wp_nav_menu( array(
-                'theme_location' => 'menu-1',
-                'menu_id'        => 'primary-menu',
-            ) );
+            if (is_home() || is_front_page()) {
+
+                wp_nav_menu( array(
+                    'theme_location' => 'menu-1',
+                    'menu_id'        => 'primary-menu',
+                ) );
+            } else {
+                wp_nav_menu( array(
+                    'theme_location' => 'primary',
+                    'menu' => 'Secondary Menu',
+                    'menu_class' => 'secondary-menu',
+
+                ) );
+            }
+
             ?>
         </nav><!-- #site-navigation -->
     </div>

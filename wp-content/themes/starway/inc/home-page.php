@@ -23,11 +23,8 @@ $arrContextOptions=array(
                     <div class="sliding-in">
                         <h1 class="light-text space-bottom-x2">You have a dream<br/> we have a way - Star Way!</h1>
                         <p class="light-text col-md-10"> Your business deserves to grow up and to develop. You need more than just a
-                            website. You need result and we know how to make it best. Even If your
-                            project is small or difficult or completely crazy, in any case we realize it at
-                            the highest level. We create a website design that will be perfect for your
-                            company, and that’ll look and feel like your brand.<br/>Our services range from web site design to logo design, visual branding and
-                        marketing.</p>
+                            website. You need result and we know how to make it best. We can create a website design that will be perfect for your
+                            company, and that’ll look and feel like your brand.</p>
                         <a class="btn btn-action space-top-x2 show-contact-form">
                             Get Started
                         </a>
@@ -121,11 +118,13 @@ $arrContextOptions=array(
                                     </span>
                                 </div>
                             </a>
-                            <div class="block-skew skew-left block-item skew-inside fade-me-in">
-                                <span>
-                                     <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/portfolio/6.svg", false, stream_context_create($arrContextOptions)); ?>
-                                </span>
-                            </div>
+                            <a target="_blank" href="http://scoblawyers.com">
+                                <div class="block-skew skew-left block-item skew-inside fade-me-in">
+                                    <span>
+                                         <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/portfolio/6.svg", false, stream_context_create($arrContextOptions)); ?>
+                                    </span>
+                                </div>
+                            </a>
                             <a href="/portfolio/kitties">
                                 <div class="block-skew skew-left block-item skew-inside fade-me-in">
                                     <span class="portfolio-item kitties_hp">
@@ -257,17 +256,27 @@ $arrContextOptions=array(
                                     </span>
                                 </div>
                             </a>
-                            <div class="block-skew skew-left block-item skew-inside fade-me-in">
-                                <span>
-                                     <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/services/security.svg", false, stream_context_create($arrContextOptions)); ?>
-                                    <span>Network Security</span>
-                                </span>
-                            </div>
-                            <div class="block-skew skew-left show-more block-item skew-inside fade-me-in">
-                                <a href="#" class="skew-more">
-                                    <span class="unskew-child">More</span>
-                                </a>
-                            </div>
+                            <a href="/network-security">
+                                <div class="block-skew skew-left block-item skew-inside fade-me-in">
+                                    <span>
+                                         <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/services/security.svg", false, stream_context_create($arrContextOptions)); ?>
+                                        <span>Network Security</span>
+                                    </span>
+                                </div>
+                            </a>
+                            <a href="/smm">
+                                <div class="block-skew skew-left block-item skew-inside fade-me-in">
+                                    <span>
+                                         <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/services/smm_service.svg", false, stream_context_create($arrContextOptions)); ?>
+                                        <span>SMM</span>
+                                    </span>
+                                </div>
+                            </a>
+<!--                            <div class="block-skew skew-left show-more block-item skew-inside fade-me-in">-->
+<!--                                <a href="/portfolio" class="skew-more">-->
+<!--                                    <span class="unskew-child">More</span>-->
+<!--                                </a>-->
+<!--                            </div>-->
                         </div>
                     </div>
                 </div>
@@ -343,7 +352,7 @@ $arrContextOptions=array(
                         </div>
                         <div class="swiper-slide">
                             <div class="clients-slide">
-                                <div class="client-photo"><img alt="Rik" src="<?php echo get_template_directory_uri(); ?>/assets/img/clients/rik.jpg" /></div>
+                                <div class="client-photo"><img alt="Iaroslav Orobchuk" src="<?php echo get_template_directory_uri(); ?>/assets/img/clients/rik.jpg" /></div>
                                 <div class="light-text space-bottom-x2 client-title space-top-x2 flexbox-container">
                                     <div class="flexbox-container company-logo vertical-center">
                                         <img alt="Starway" src="<?php echo get_template_directory_uri(); ?>/assets/img/clients/starway.svg" />
@@ -352,7 +361,7 @@ $arrContextOptions=array(
                                 </div>
                                 <p class="light-text testimonial col-md-10">I sincerely thank you, Starway USA, for the excellent service and professionalism. It is very convenient to work with the site: a wonderful design and it’s very easy to manage it. It's nice to deal with professionals.</p>
                                 <div class="author pull-right light-text space-top-x2">
-                                    Rik Huk
+                                    Iaroslav Orobchuk
                                     <div class="author-position">
                                         CEO
                                     </div>

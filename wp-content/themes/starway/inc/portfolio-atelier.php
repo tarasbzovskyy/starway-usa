@@ -41,7 +41,7 @@ $arrContextOptions=array(
             <div class="group col-md-6 ">
                 <div class="block-reveal dark group">
                     <div class="sliding-in"><h3>GRAPHIC SIGN</h3>
-                        It is possible to use the graphic sign. Here presented
+                        It is possible to use the graphic sign. Here you may find
                         scale mesh (construction principle) -
                         the relative size is taken from
                         the main logo, security field, the minimum size is -15 by 19 mm.
@@ -59,7 +59,7 @@ $arrContextOptions=array(
                         carriers should be guided
                         restrictions.
                         Other objects can not be located
-                        To a logo more close specified security
+                        To a logo, closed specified security
                         fields, except background
                         images that do not affect the
                         perusal of the trade mark.
@@ -143,6 +143,28 @@ $arrContextOptions=array(
                 <img alt="My Atelier Implementation 3" src="/wp-content/themes/starway/assets/img/portfolio/myatelier_imp_4.jpg" class="image shadow-block fade-me-in" />
             </div>
         </div>
+    </section>
+    <section id="contacts" class="contacts-block group viewpoint">
+        <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/contact-stripe.svg", false, stream_context_create($arrContextOptions)); ?>
+        <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/contact-triangle.svg", false, stream_context_create($arrContextOptions)); ?>
+
+        <div class="container">
+            <div class="row space-top-x2 space-bottom-x2">
+                <div class="section-title light-text text-center">
+                    Contact Us
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="flexbox-container" >
+                    <div class="col-md-8 vertical-center light-text">
+                        <?php echo do_shortcode('[contact-form-7 id="10" title="Contacts"]')?>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </section>
 </div>
 

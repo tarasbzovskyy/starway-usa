@@ -20,7 +20,7 @@ $arrContextOptions=array(
                 <h1 class="entry-title text-left space-bottom-x2">Massive</h1>
                 <div class="block-reveal dark">
                     <div class="sliding-in">
-                        <p>Factory "Massive" is the first in Crimea specialized enterprise for the production of autoclaved aerated concrete.</p>
+                        <p>Factory "Massive" is the first in Ukrainian Crimea specialized enterprise for the production of autoclaved aerated concrete.</p>
                     </div>
                 </div>
             </div>
@@ -204,6 +204,28 @@ $arrContextOptions=array(
                 <img alt="Massive Implementation Work 5" src="/wp-content/themes/starway/assets/img/portfolio/massive_imp_5.jpg" class="image shadow-block fade-me-in" />
             </div>
         </div>
+    </section>
+    <section id="contacts" class="contacts-block group viewpoint">
+        <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/contact-stripe.svg", false, stream_context_create($arrContextOptions)); ?>
+        <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/contact-triangle.svg", false, stream_context_create($arrContextOptions)); ?>
+
+        <div class="container">
+            <div class="row space-top-x2 space-bottom-x2">
+                <div class="section-title light-text text-center">
+                    Contact Us
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="flexbox-container" >
+                    <div class="col-md-8 vertical-center light-text">
+                        <?php echo do_shortcode('[contact-form-7 id="10" title="Contacts"]')?>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </section>
 </div>
 
