@@ -7,7 +7,6 @@ $arrContextOptions=array(
     ),
 );
 ?>
-	</div>
 
 	<footer id="colophon" class="viewpoint">
         <?php  echo file_get_contents(get_template_directory_uri()."/assets/img/footer-triangle.svg", false, stream_context_create($arrContextOptions)); ?>
@@ -74,7 +73,6 @@ $arrContextOptions=array(
             </div>
         </div>
 	</footer>
-</div>
 
 <?php wp_footer(); ?>
 

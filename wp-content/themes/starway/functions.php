@@ -191,3 +191,5 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 
 
 add_filter('user_can_richedit' , create_function('' , 'return false;') , 50);
+remove_filter( 'the_content', 'wpautop' );
+remove_filter( 'the_excerpt', 'wpautop' );

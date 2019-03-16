@@ -350,6 +350,48 @@ function cropLargeUrls(target, number){
         }
     });
 }
+//start
+$.fn.visible = function(partial) {
+
+    var $t            = $(this),
+        $w            = $(window),
+        viewTop       = $w.scrollTop(),
+        viewBottom    = viewTop + $w.height(),
+        _top          = $t.offset().top,
+        _bottom       = _top + $t.height(),
+        compareTop    = partial === true ? _bottom : _top,
+        compareBottom = partial === true ? _top : _bottom;
+
+    return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
+
+};
+
+function parallaxMoving(target, data_smooth) {
+    var element = $(target);
+
+    element.each(function (i, el) {
+
+        var move = $(el);
+
+        $(window).scroll(function (event) {
+
+            var top = $(this).scrollTop();
+
+            if (move.visible(true)) {
+                move.addClass("moving-target").css({
+                    "transform": "translateY(" + top / data_smooth + "px)",
+                    "-webkit-transform": "translateY(" + top /data_smooth + "px)",
+                    "-moz-transform": "translateY(" + top / data_smooth + "px)"
+                });
+            } else {
+                move.removeClass("moving-target");
+            }
+
+        });
+    });
+}
+//end
+
 
 //functions init
 $(document).ready(function () {

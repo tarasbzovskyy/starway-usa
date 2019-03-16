@@ -109,7 +109,7 @@ a:hover,#site-navigation a:hover,
 .dark-text a, .dark-text {color:#333!important;}
 .red-text a, .red-text {color:#bf0a20!important;}
 
-header {
+header.site-header {
   background: rgba(0, 0, 0, 1);
   background: -moz-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(231, 56, 39, 0) 100%);
   background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 0, 0, 1)), color-stop(100%, rgba(231, 56, 39, 0)));
@@ -419,14 +419,14 @@ svg {width:100%;}
   -moz-transition: all .2s ease-out;
   border-radius:0!important;
 }
-.btn.btn-action {
+.btn.btn-action,.search-submit{
   background-color:#bf0a20;
   color:#fff;
 }
 .btn.btn-medium {
   padding:16px 25px;
 }
-.btn.btn-action:hover {
+.btn.btn-action:hover,.search-submit:hover {
   background-color:#fff;
   color:#bf0a20;
   border-color:#bf0a20;
@@ -439,6 +439,7 @@ svg {width:100%;}
   background-color: #bf0a20;
   color:#fff;
 }
+
 .header-content {
   /*margin-top:-10%;*/
 }
@@ -1525,3 +1526,78 @@ background:#cae2ef;
 .cats-price-tag .logo-anatomy{
   background: url('../img/portfolio/cats/cats-pattern.png') rgba(225, 226, 232, 0.18) center center repeat;
 }
+
+/*Blog Start*/
+.posted-on {
+  display:block;
+}
+.read-more-article {
+  margin-left:6px;
+}
+.author-avatar {
+  width:50px;
+  height:50px;
+  border-radius: 50%;
+  overflow:hidden;
+  margin-right:10px;
+}
+.author-block > div {
+  display:inline-block
+}
+.post-title {
+  margin: 15px 0;
+
+}
+.post-title > a{
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 36px;
+  color: #333;
+}
+.post-content p {
+  margin-bottom:20px;
+}
+.post-content {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #666666;
+}
+.author-block time {
+  color:#a7a7a7;
+}
+.sidebar #secondary > section {
+  box-shadow: 1px 4px 15px rgba(0, 0, 0, 0.09);
+  padding: 20px 30px;
+}
+.sidebar ul a {
+  color: #333;
+}
+.sidebar ul {
+  list-style: disc!important;
+  padding-left: 20px;
+  margin: 0;
+}
+.sidebar .widget-title{
+  margin-bottom:15px;
+}
+.search-form label {
+  display:block;
+}
+.search-form input {
+  height: auto;
+  font-weight: 800;
+  color: #090919;
+  font-size: 14pt;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  text-transform: uppercase;
+  background-color: transparent;
+  transition: all .2s ease-out;
+  -webkit-transition: all .2s ease-out;
+  -moz-transition: all .2s ease-out;
+  width:100%;
+}
+.search-submit {
+  display:none;
+}
+/*Blog End */
